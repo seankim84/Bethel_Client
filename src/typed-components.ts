@@ -3,8 +3,7 @@ import { ThemedStyledComponentsModule } from "styled-components";
 
 
 interface IThemeInterface {
-  primaryColor: string;
-  primaryColorInverted: string;
+    blueColor: string;
 }
 
 const {
