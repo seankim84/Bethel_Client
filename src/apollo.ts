@@ -1,14 +1,49 @@
-import ApolloClient, { Operation } from 'apollo-boost';
+
+import ApolloClient, { Operation } from "apollo-boost";
 
 const client = new ApolloClient({
-    request: async(operation: Operation) => { // request를 받기위해 설정
-        operation.setContext({  // operation Object에서 query응답들을 채온다.(모든 operation에 attribute를 설정)
-            header: {
-                "X-JWT": localStorage.getItem('jwt') || ""
+    clientState: {
+        defaults: {
+            auth: {
+                __typename: "Auth",
+                isLoggedIn: Boolean(localStorage.getItem("jwt"))
+            }
+        },
+        resolvers: {
+            Mutation: {
+                logUserIn: (_:any, { token }:any, { cache }:any) => {
+                    localStorage.setItem("jwt", token);
+                    cache.writeData({
+                        data: {
+                            auth: {
+                                __typename: "Auth",
+                                isLoggedIn: true
+                            }
+                        }
+                    });
+                    return null;
+                },
+                logUserOut: (_: any, __: any, { cache }: any) => {
+                    localStorage.removeItem("jwt");
+                    cache.writeData({
+                        data: {
+                            __typename: "Auth",
+                            isLoggedIn: false
+                        }
+                    });
+                    return null;
+                }
+            }
+        }
+    },
+    request: async (operation: Operation) => {
+        operation.setContext({
+            headers: {
+                "X-JWT": localStorage.getItem("jwt") || ""
             }
         });
     },
-    uri: "http:localhost:4000/graphql"
+    uri: "http://localhost:4000/graphql"
 });
 
 export default client;
