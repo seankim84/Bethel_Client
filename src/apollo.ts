@@ -36,7 +36,7 @@ const client = new ApolloClient({ // ApolloClient Object 생성 redux라 생각(
             }
         }
     },
-    request: async (operation: Operation) => { // request를 받기 위해 설정
+    request: async (operation: Operation) => { // uri 로부터 request를 받기 위해 설정
         operation.setContext({ // operation Object에서 query응답들을 채온다.(모든 operation에 attribute를 설정)
             headers: {
                 "X-JWT": localStorage.getItem("jwt") || "" // header에 token을 넣어준다.

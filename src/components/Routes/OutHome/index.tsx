@@ -1,2 +1,2 @@
-import OutHomePresenter from './OutHomePresenter';
-export default OutHomePresenter;
+import OutHomeContainer from './OutHomeContainer';
+export default OutHomeContainer;

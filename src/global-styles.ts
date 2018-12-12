@@ -6,7 +6,7 @@ createGlobalStyle`
     @import url('https://fonts.googleapis.com/css?family=Maven+Pro');
     ${reset}
     * {
-        box-sizing: border-box;
+        box-sizing: border-box;   
     }
     body {
       font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;

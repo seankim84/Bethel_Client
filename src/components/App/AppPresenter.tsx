@@ -6,18 +6,23 @@ import EmailLogin from '../Routes/EmailLogin';
 import Home from '../Routes/Home';
 import OutHome from '../Routes/OutHome';
 import SocialLogin from '../Routes/SocialLogin';
+
 interface IProps {
     isLoggedIn: boolean
 };
 
-const AppPresenter: React.SFC<IProps> = ({ isLoggedIn }) => <BrowserRouter>{isLoggedIn ? <LoggedInRoutes /> : <LoggedOutRoutes /> }</BrowserRouter>
+const AppPresenter: React.SFC<IProps> = ({ isLoggedIn }) => (
+  <BrowserRouter>
+    {isLoggedIn ? <LoggedInRoutes /> : <LoggedOutRoutes />}
+  </BrowserRouter>
+);
 
 const LoggedOutRoutes: React.SFC = () => (
   <Switch>
     <Route path={"/"} exact={true} component={OutHome} />
-    <Route path={"/email-login"} component={EmailLogin} />
-    <Route path={"/social-login"} component={SocialLogin} />
-    <Redirect from={"*"} to={"/"} /> 
+    <Route path={"/email-login"} exact={true} component={EmailLogin} />
+    <Route path={"/social-login"} exact={true} component={SocialLogin} />
+    <Redirect from={"*"} to={"/"} exact={true} />
   </Switch>
 ); // Redirect는 무조건 맨 끝에 붙인다
 
