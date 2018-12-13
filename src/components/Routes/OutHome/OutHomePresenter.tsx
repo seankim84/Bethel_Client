@@ -9,27 +9,23 @@ import './OutHome.css';
 const FormItem = Form.Item;
 
 interface IProps {
-    emailCode: string;
+    name: string;
     password: string ;
+    onSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
+    onInputChange: (event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => void
 } // React-Router는 자동적으로 props들을 모든 Route Component로 적용한다.
 
 
 class OutHomePresenter extends React.Component<FormComponentProps & IProps>{
-
-    public handleSubmit = (e:any) => {
-        e.preventDefault();
-    }
-
     public render() {
-        const { getFieldDecorator }:any = this.props.form;
         return (
         <body>
-        <Row align="middle"  gutter={48} justify="center" type="flex" >
-            <Helmet><title>HOME | BETHEL</title></Helmet>
-            <Col span={12}>
-                <div className="LBox">
-                    <img style={{ height:"586px" ,width:"375px"}} src={iphone} alt="worship" />
-                </div>
+            <Row align="middle"  gutter={48} justify="center" type="flex" >
+                <Helmet><title>HOME | BETHEL</title></Helmet>
+                <Col span={12}>
+                    <div className="LBox">
+                       <img style={{ height:"586px" ,width:"375px"}} src={iphone} alt="worship" />
+                    </div>
             </Col>
             <Col span={12}>
                 <div className="RBox">
@@ -40,18 +36,10 @@ class OutHomePresenter extends React.Component<FormComponentProps & IProps>{
                     <Link to={"/social-login"}>Facebook으로 로그인하기</Link>
                 </Button>
                 </div>
-                <Form style={{display: "grid", justifyItems:"center"}} onSubmit={this.handleSubmit} className="login-form">
-                    <FormItem style={{width:"80%"}}> 
-                        {getFieldDecorator('userName', {
-                            rules: [{ required: true, message: 'Please input your username!' }],
-                        })(
-                            <Input prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)'}} />} placeholder="Username"  />
-                        )}
-                        {getFieldDecorator('password', {
-                            rules: [{ required: true, message: 'Please input your Password!' }],
-                        })(
-                            <Input prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} type="password" placeholder="Password" />
-                        )}
+                <Form style={{display: "grid", justifyItems:"center"}} onSubmit={this.props.onSubmit} className="login-form">
+                    <FormItem style={{ width:"80%" }}> 
+                        <Input type="text" prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)'}} />} name={"name"} value={this.props.name} onChange={this.props.onInputChange} placeholder="Username"  />
+                        <Input type="password" prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} name={"password"} value={this.props.password} onChange={this.props.onInputChange} placeholder="Password" />
                         <div style={{display: "grid",justifyContent: "center"}}>
                             <Button style={{top:"10px"}} type="primary" htmlType="submit" className="login-form-button">
                                 Login
@@ -59,13 +47,12 @@ class OutHomePresenter extends React.Component<FormComponentProps & IProps>{
                         <br/>
                         <p> 계정이 없으신가요? <Link to={"/SignUp"}>register now!</Link></p>
                         </div>
-                        
                     </FormItem>     
                 </Form>
                 </div>
             </Col>
         </Row>
-        </body>
+    </body>
     )
   }  
 }

@@ -1,13 +1,20 @@
 import React from 'react';
 import { graphql } from 'react-apollo';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import theme from "../../theme";
 import { ThemeProvider } from "../../typed-components";
 import AppPresenter from './AppPresenter';
 import { IS_LOGGED_IN } from './AppQueries';
 
+
+
 // apollo.ts로 부터 오는 정보이다.
-const AppContainer = ({ data }: any) => <ThemeProvider theme={theme}>
-    <AppPresenter isLoggedIn={ data.auth.isLoggedIn }/> 
-</ThemeProvider>
+const AppContainer = ({ data }: any) => <React.Fragment>
+    <ThemeProvider theme={theme}>
+        <AppPresenter isLoggedIn={ data.auth.isLoggedIn }/> 
+    </ThemeProvider>
+    <ToastContainer draggable={true} position={"bottom-center"}/>
+</React.Fragment>
 
 export default graphql(IS_LOGGED_IN)(AppContainer);
