@@ -1,6 +1,6 @@
 import { FormComponentProps } from "antd/lib/form/Form";
 import React from "react";
-import { Mutation } from 'react-apollo';
+import { Mutation, MutationUpdaterFn } from 'react-apollo';
 import { RouteComponentProps } from "react-router-dom";
 import { toast } from 'react-toastify';
 import OutHomePresenter from "./OutHomePresenter";
@@ -36,6 +36,7 @@ class OutHomeContainer extends React.Component<
           email: `${name}`,
           password: `${password}`
         }}
+        update = {this.afterSubmit}
       >
         {(mutation, { loading }) => {
         const onSubmit: React.FormEventHandler < HTMLFormElement > = event => {
@@ -70,6 +71,11 @@ class OutHomeContainer extends React.Component<
       [name]: value
     } as any);
   };
+
+  public afterSubmit: MutationUpdaterFn = (cache, result) => {
+    console.log(result);
+  }
+
 }
 
 
