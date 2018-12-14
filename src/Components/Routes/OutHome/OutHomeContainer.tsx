@@ -3,6 +3,8 @@ import React from "react";
 import { Mutation } from 'react-apollo';
 import { RouteComponentProps } from "react-router-dom";
 import { toast } from 'react-toastify';
+import { LOG_USER_IN } from '../../../sharedQueries';
+import { emailSignIn, emailSignInVariables } from "../../../types/api";
 import { EMAIL_SIGN_IN } from './OutHome.queries';
 import OutHomePresenter from "./OutHomePresenter";
 
@@ -12,25 +14,27 @@ interface IState {
     password: string;
 }
 
-interface IMutationInterface {
-  email: string;
-  password: string;
-}
+interface IProps extends RouteComponentProps<any>, FormComponentProps{}
 
-class EmailSignInMutation extends Mutation<any, IMutationInterface>{}
+class EmailSignInMutation extends Mutation<emailSignIn, emailSignInVariables>{}
 
-class OutHomeContainer extends React.Component<
-  RouteComponentProps<any> & FormComponentProps,
-  IState
-> {
-  public state = {
-    name: "",
-    password: ""
-  };
+class OutHomeContainer extends React.Component<IProps, IState> {
+  constructor(props: IProps) {
+    super(props);
+    if(!props.location.state){
+      props.history.push('/');
+    }
+    this.state = {
+      name:"",
+      password: ""
+    }
+  }
 
   public render() {
     const { name, password } = this.state;
-    return (
+    return ( 
+    <Mutation mutation={LOG_USER_IN}>
+      {logUserIn => (
       <EmailSignInMutation
         mutation={EMAIL_SIGN_IN}
         variables={{
@@ -40,9 +44,16 @@ class OutHomeContainer extends React.Component<
         onCompleted={data => {
           const { EmailSignIn } = data;
           if (EmailSignIn.ok) {
-            return;
+            if(EmailSignIn.token){
+               logUserIn({
+                variables: {
+                  token: EmailSignIn.token
+                }
+              });
+            }
+            return toast.success("You're Verified, Login now")
           } else {
-            toast.error(EmailSignIn.error);
+            return toast.error(EmailSignIn.error);
           }
         }}
       >
@@ -51,9 +62,10 @@ class OutHomeContainer extends React.Component<
           event.preventDefault();
         const isValid = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i.test(`${name}`);
         if (isValid) {
-          mutation()
+            return ;
+            // mutation()
         } else {
-          toast.error("Please write a valid Email");
+            toast.error("Please write a valid Email");
         }
       };
       return (
@@ -66,6 +78,8 @@ class OutHomeContainer extends React.Component<
       );
       }}
       </EmailSignInMutation>
+    )}</Mutation>
+      
     );
   }
 
@@ -80,6 +94,5 @@ class OutHomeContainer extends React.Component<
     } as any);
   };
 }
-
 
 export default OutHomeContainer;

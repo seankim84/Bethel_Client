@@ -27,8 +27,10 @@ const client = new ApolloClient({ // ApolloClient Object 생성 redux라 생각(
                     localStorage.removeItem("jwt"); // logOut시, token 삭제
                     cache.writeData({ 
                         data: {
-                            __typename: "Auth",
-                            isLoggedIn: false
+                            auth:{
+                                __typename: "Auth",
+                                isLoggedIn: false
+                            }
                         }
                     });
                     return null;
