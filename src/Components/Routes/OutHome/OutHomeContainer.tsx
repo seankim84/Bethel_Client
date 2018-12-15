@@ -5,9 +5,9 @@ import { RouteComponentProps } from "react-router-dom";
 import { toast } from 'react-toastify';
 import { LOG_USER_IN } from '../../../sharedQueries';
 import { emailSignIn, emailSignInVariables } from "../../../types/api";
+import Home from '../Home';
 import { EMAIL_SIGN_IN } from './OutHome.queries';
 import OutHomePresenter from "./OutHomePresenter";
-
 
 interface IState {
     name: string;
@@ -50,8 +50,9 @@ class OutHomeContainer extends React.Component<IProps, IState> {
                   token: EmailSignIn.token
                 }
               });
+              return <Home />;
             }
-            return toast.success("You're Verified, Login now")
+            return toast.success("You're verified")
           } else {
             return toast.error(EmailSignIn.error);
           }
@@ -62,8 +63,7 @@ class OutHomeContainer extends React.Component<IProps, IState> {
           event.preventDefault();
         const isValid = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i.test(`${name}`);
         if (isValid) {
-            return ;
-            // mutation()
+            mutation()
         } else {
             toast.error("Please write a valid Email");
         }

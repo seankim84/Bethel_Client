@@ -1,10 +1,13 @@
 import React from 'react';
+import Header from '../../Header'
+import './Home.css';
+
 
 class HomePresenter extends React.Component {
     public render() {
         return (
-            <div>This is the Home</div>
-        )
+            <Header mainTitle="Behtel" Intro="Intro" Team="Team" Family="Family" Insight="Insight" />
+        )   
     }
 }
 

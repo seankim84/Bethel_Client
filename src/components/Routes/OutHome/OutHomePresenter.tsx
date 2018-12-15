@@ -19,7 +19,7 @@ interface IProps {
 class OutHomePresenter extends React.Component<FormComponentProps & IProps>{
     public render() {
         return (
-        <body>
+        
             <Row align="middle"  gutter={48} justify="center" type="flex" >
                 <Helmet><title>HOME | BETHEL</title></Helmet>
                 <Col span={12}>
@@ -52,7 +52,7 @@ class OutHomePresenter extends React.Component<FormComponentProps & IProps>{
                 </div>
             </Col>
         </Row>
-    </body>
+    
     )
   }  
 }

@@ -1,22 +1,7 @@
-body {
-    margin: 0;
-    padding: 0;
-    width:100%;
-    height: 100%;
-    display: grid;
-    justify-content:center;
-    align-content: center;
-    background: #fafafa;
-}
-
 .LBox {
     display: grid;
     align-items: center;
     justify-content: center;
-}
-
-.LBox {
-    display: grid;
 }
 
 .RBox {
