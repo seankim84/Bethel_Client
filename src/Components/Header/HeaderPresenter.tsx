@@ -1,5 +1,5 @@
-import { Col, Row } from "antd";
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 interface IProps {
@@ -17,15 +17,15 @@ const Header: React.SFC<IProps> = ({
     Team,
     Insight
 }) => (
-    <div>
-        <Row className="Header">
-          <Col span={4}>{mainTitle}</Col>
-          <Col span={4}>{Intro}</Col>
-          <Col span={4}>{Team}</Col>
-          <Col span={4}>{Family}</Col>
-          <Col span={4}>{Insight}</Col>      
-        </Row>
-    </div>
+    <section className="Header">
+        <header>
+            <div className="Title"><Link style={{"color":"#898989"}} to={"/"}>{mainTitle}</Link></div>
+            <div className="header-Item"><Link style={{"color":"#898989"}}to={"/intro"}>{Intro}</Link></div>
+            <div className="header-Item"><Link style={{"color":"#898989"}}to={"/team"}>{Team}</Link></div>
+            <div className="header-Item"><Link style={{"color":"#898989"}}to={"/family"}>{Family}</Link></div>
+            <div className="header-Item"><Link style={{"color":"#898989"}}to={"/insight"}>{Insight}</Link></div>
+        </header>
+    </section>
 )
 
 export default Header;
