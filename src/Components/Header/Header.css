@@ -1,21 +1,84 @@
-header {
-    display:grid;
-    height: 8vh;
+header .HeaderTop {
+    margin-top: 0.5rem;
+    padding:0;
     width: 100%;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-    font-size: 20px;
+    height: 8vh;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: fixed;
+    align-items: center;
 }
 
-header .Title {
+.Header h1 {
+    margin-left: 3.5em;
     display: grid;
+    font-size: 2.1rem; 
+    align-items: center;
+    font-family: 'Lobster', cursive;
     font-weight: bold;
-    justify-content: left;
-    align-items: center;
-    margin-left: 3rem;
 }
 
-header .header-Item {
+.HeaderTop nav ul {
+    font-family: "Roboto", sans-serif;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    color: #ffffff;
+    font-size: 1.4em;
+}
+
+.HeaderTop nav ul li {
+    transition: color 2s ease,
+    padding 1s ease;
+}
+
+.HeaderTop nav ul li:hover {
+    cursor:pointer;
+    color: black;
+    padding-left:15px;
+}
+
+header {
+    min-height: 100vh;
+    width: 100%;
+    background: url('../../images//cross.jpg') center/cover fixed no-repeat;
+}
+
+header .HeaderMiddle  {
+    height: 92vh;
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    justify-items: center;
+    color: white;
+}
+
+.ArrowIcon {
     display: grid;
     align-items: center;
-    justify-content: center;
+    font-size: 2rem;
+    transition: font-size 1s ,
 }
+
+.ArrowIcon:hover{
+    cursor: pointer;
+    font-size:2.5rem;
+}
+
+.MiddleText{
+    font-family: "Roboto", sans-serif;
+    font-size:2.5rem;
+    font-weight: bold;
+}
+
+.HeaderBottom {
+    display: grid;
+    font-size: 2.5rem;
+    justify-content: center;
+    padding-bottom: 1rem ;
+    color: #898989;
+}
+
+
+

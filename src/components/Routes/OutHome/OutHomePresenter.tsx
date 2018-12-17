@@ -19,7 +19,7 @@ interface IProps {
 class OutHomePresenter extends React.Component<FormComponentProps & IProps>{
     public render() {
         return (
-        
+        <div className="OutHome">
             <Row align="middle"  gutter={48} justify="center" type="flex" >
                 <Helmet><title>HOME | BETHEL</title></Helmet>
                 <Col span={12}>
@@ -36,22 +36,23 @@ class OutHomePresenter extends React.Component<FormComponentProps & IProps>{
                     <Link to={"/social-login"}>Facebook으로 로그인하기</Link>
                 </Button>
                 </div>
-                <Form style={{display: "grid", justifyItems:"center"}} onSubmit={this.props.onSubmit} className="login-form">
-                    <FormItem style={{ width:"80%" }}> 
-                        <Input type="text" prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)'}} />} name={"name"} value={this.props.name} onChange={this.props.onInputChange} placeholder="Username"  />
-                        <Input type="password" prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} name={"password"} value={this.props.password} onChange={this.props.onInputChange} placeholder="Password" />
+                    <Form style={{display: "grid", justifyItems:"center"}} onSubmit={this.props.onSubmit} className="login-form">
+                        <FormItem style={{ width:"80%" }}> 
+                            <Input type="text" prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)'}} />} name={"name"} value={this.props.name} onChange={this.props.onInputChange} placeholder="Username"  />
+                            <Input type="password" prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} name={"password"} value={this.props.password} onChange={this.props.onInputChange} placeholder="Password" />
                         <div style={{display: "grid",justifyContent: "center"}}>
                             <Button style={{top:"10px"}} type="primary" htmlType="submit" className="login-form-button">
                                 Login
                             </Button>
-                        <br/>
-                        <p> 계정이 없으신가요? <Link to={"/SignUp"}>register now!</Link></p>
-                        </div>
-                    </FormItem>     
-                </Form>
-                </div>
-            </Col>
-        </Row>
+                            <br/>
+                            <p> 계정이 없으신가요? <Link to={"/SignUp"}>register now!</Link></p>
+                            </div>
+                        </FormItem>     
+                    </Form>
+                    </div>
+                </Col>
+            </Row>
+        </div>
     
     )
   }  

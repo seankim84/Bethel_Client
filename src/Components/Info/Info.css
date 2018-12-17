@@ -1,0 +1,61 @@
+.Info {
+    width: 100%;
+    height: 100vh; 
+    background: #d5d7d6;
+    position: absolute;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.WholeBox {
+    width: 85vw;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.BoxLeft {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
+    url('../../images//LeftBox.jpg') center/cover fixed no-repeat;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 2s ease, 
+        color 2s ease, 
+        padding 1.5s linear;
+}
+
+.BoxLeft:hover {
+    cursor: pointer;
+    background: black;
+    color: white;
+    padding-right: 2rem;
+}
+
+.BoxRight {
+    color: white;
+    width: 100%;
+    height: 100%;
+    background: url('../../images//RightBox.jpg') center/cover fixed no-repeat;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    transition: background-color 2s ease,
+        color 2s ease,
+        padding 1.5s linear;
+}
+
+.BoxRight:hover {
+  cursor: pointer;
+  background: #ffffff;
+  color: black;
+  padding-left: 2rem;
+}

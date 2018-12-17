@@ -1,12 +1,18 @@
 import React from 'react';
 import Header from '../../Header'
+import Info from "../../Info";
 import './Home.css';
 
 
 class HomePresenter extends React.Component {
     public render() {
         return (
-            <Header mainTitle="Behtel" Intro="Intro" Team="Team" Family="Family" Insight="Insight" />
+            <div>
+                <div className="Whole">
+                    <Header mainTitle="Behtel" Intro="Intro" Team="Team" Family="Family" Insight="Insight" />
+                    <Info />
+                </div>
+            </div>
         )   
     }
 }

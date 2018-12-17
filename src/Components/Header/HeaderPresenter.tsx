@@ -1,5 +1,5 @@
+import { Icon } from 'antd';
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Header.css';
 
 interface IProps {
@@ -11,20 +11,30 @@ interface IProps {
 }
 
 const Header: React.SFC<IProps> = ({
-    mainTitle,
-    Intro,
-    Family,
-    Team,
-    Insight
+    mainTitle
 }) => (
     <section className="Header">
-        <header>
-            <div className="Title"><Link style={{"color":"#898989"}} to={"/"}>{mainTitle}</Link></div>
-            <div className="header-Item"><Link style={{"color":"#898989"}}to={"/intro"}>{Intro}</Link></div>
-            <div className="header-Item"><Link style={{"color":"#898989"}}to={"/team"}>{Team}</Link></div>
-            <div className="header-Item"><Link style={{"color":"#898989"}}to={"/family"}>{Family}</Link></div>
-            <div className="header-Item"><Link style={{"color":"#898989"}}to={"/insight"}>{Insight}</Link></div>
-        </header>
+    <header>
+        <div className="HeaderTop">
+            <h1>{mainTitle}</h1>
+            <nav>
+                <ul>
+                    <li>Intro</li>
+                    <li>Team</li>
+                    <li>Family</li>
+                    <li>Insight</li>
+                </ul>
+            </nav>
+        </div>
+        <div className="HeaderMiddle">
+            <Icon className="ArrowIcon" type="left" />
+            <span className="MiddleText">안녕하세요 베델교회입니다</span>
+            <Icon className="ArrowIcon" type="right" />
+        </div>
+        <div className="HeaderBottom">
+            <Icon className ="ArrowIcon" type="down"/>
+        </div>
+    </header>
     </section>
 )
 
