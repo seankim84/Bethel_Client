@@ -2,13 +2,13 @@ import React from 'react';
 import './Modal.css'
 
 interface IProps {
-    show?: any;
-    handleClose?: any;
+    show?: boolean;
+    handleClose: any;
     children: any;
 };
 
-const Modal:React.SFC<IProps> = ({ handleClose, show, children }) => {
-    const showHideClassName = show ? "display-block" : "display-none";
+const Modal: React.SFC<IProps> = ({ show, handleClose, children }) => {
+    const showHideClassName = show ? "display-block" : "modal display-none";
     return (
         <div className={showHideClassName}>
             <section className="modal-main">
@@ -16,7 +16,8 @@ const Modal:React.SFC<IProps> = ({ handleClose, show, children }) => {
                 <button onClick={handleClose}>close</button>
             </section>
         </div>
-    );
-};
+    )
+}
+
 
 export default Modal;

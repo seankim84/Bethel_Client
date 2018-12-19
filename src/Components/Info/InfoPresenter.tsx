@@ -7,23 +7,29 @@ interface IState {
   show: boolean
 }
 
-class Info extends React.Component<IState>{
+interface IProps {
+  handleClose:any
+}
+
+class Info extends React.Component<IProps, IState>{
   
-  public state = {
-    show: false
-  };
+  constructor(props: IProps){
+    super(props)
+    this.state = {
+      show:false
+    }
+  }
 
   public showModal = () => {
-    this.setState({show:true})
+    this.setState({ show:true })
   }
 
   public hideModal = () => {
-    this.setState({show:false})
+    this.setState({ show:false })
   }
 
   public render(){
     return (
-    (
       <section className="Info">
         <div className="InfoTitle">
           <h1>Philociphy</h1>
@@ -32,23 +38,21 @@ class Info extends React.Component<IState>{
       </p>
         </div>
         <div className="WholeBox">
-          <div
-            className="BoxLeft">
-            <button onClick={this.showModal}>click me</button>
-              <Modal show={this.state.show} handleClose={this.hideModal}>
+          <div className="BoxLeft" onClick={this.showModal} onDoubleClick={this.hideModal}>
+            <Modal show={this.state.show} handleClose={this.hideModal}>
                 <p>Modal</p>
                 <p>Data</p>
               </Modal>
             <p>VISION</p>
             <Icon type="arrow-left" />
           </div>
+
           <div className="BoxRight">
             <p>VALUE</p>
             <Icon type="arrow-right" />
           </div>
         </div>
       </section>
-    )
   )
   }
 }

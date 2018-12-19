@@ -1,4 +1,3 @@
-import { Icon } from 'antd';
 import React from 'react';
 import './Header.css';
 
@@ -11,12 +10,11 @@ interface IProps {
 }
 
 const Header: React.SFC<IProps> = ({
-    mainTitle
 }) => (
     <section className="Header">
     <header>
         <div className="HeaderTop">
-            <h1>{mainTitle}</h1>
+            <h1>Bethel</h1>
             <nav>
                 <ul>
                     <li>Intro</li>
@@ -26,16 +24,7 @@ const Header: React.SFC<IProps> = ({
                 </ul>
             </nav>
         </div>
-        <div className="HeaderMiddle">
-            <Icon className="ArrowIcon" type="left" />
-            <span className="MiddleText">안녕하세요 베델교회입니다</span>
-            <Icon className="ArrowIcon" type="right" />
-        </div>
-        <div className="HeaderBottom">
-            <Icon className ="ArrowIcon" type="down"/>
-        </div>
     </header>
-    </section>
+    </section>   
 )
-
 export default Header;
