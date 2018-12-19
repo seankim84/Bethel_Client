@@ -1,9 +1,9 @@
 import React from 'react';
+import Contact from '../../Contact';
 import Header from '../../Header'
 import Info from "../../Info";
 import Mission from '../../Mission';
 import './Home.css';
-
 
 class HomePresenter extends React.Component {
     public render() {
@@ -13,6 +13,7 @@ class HomePresenter extends React.Component {
                     <Header mainTitle="Behtel" Intro="Intro" Team="Team" Family="Family" Insight="Insight" />
                     <Info />
                     <Mission />
+                    <Contact />
                 </div>
             </div>
         )   
