@@ -6,6 +6,7 @@ header .HeaderTop {
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     position: fixed;
+    z-index: 1;
     align-items: center;
 }
 

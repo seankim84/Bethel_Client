@@ -1,10 +1,10 @@
 import React from 'react';
-import  Carousel from './CarouselPresenter';
+import  Middle from './CarouselPresenter';
 
 class CarouselContainer extends React.Component {
     public render(){
         return (
-            <Carousel/>
+            <Middle />
         )
     }
 }
