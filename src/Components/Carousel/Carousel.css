@@ -12,3 +12,21 @@
     margin: 0;
     padding: 0;
 }
+
+.Slider0 {
+    background: url('../../images/cross1.jpg') center/cover fixed no-repeat;
+    color: blue;
+}
+
+.Slider1  {
+    background: url('../../images/cross2.jpg') center/cover fixed no-repeat;
+    color: red;
+}
+
+.Slider2 {
+    background: url('../../images/cross3.jpg') center/cover fixed no-repeat;
+}
+
+.Slider3 {
+  background: url('../../images/cross4.jpg') center/cover fixed no-repeat;
+}
