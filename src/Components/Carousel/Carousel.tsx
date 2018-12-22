@@ -1,15 +1,41 @@
+import { Icon } from 'antd';
 import React from "react";
 import ReactSwipe from "react-swipe";
 import "./Carousel.css";
 
 
 const numberOfSlide = 4;
+
 const paneNodes = Array.apply(null, Array(numberOfSlide)).map((_:any, i:any) => {
-      return (
-          <div key={i}>
-            <div style={{width: "100%", height: "100vh"}} className={`Slider${i}`}>안녕하세요 bethel 입니다.</div>
-          </div>
-    )
+  if(i===0){
+    return (
+      <div key={i}>
+        <div style={{ width: "100%", height: "100vh" }} className={`Slider${i}`}>
+          <div className="title">안녕하세요 베델입니다</div>
+        </div>
+      </div>
+    ) 
+  } else if (i===1){
+    return <div key={i}>
+        <div style={{ width: "100%", height: "100vh" }} className={`Slider${i}`}>
+          <div className="title">호치민부터 하노이 하노이부터 미얀마 미얀마부터 아프리카까지</div>
+        </div>
+      </div>;
+  } else if (i === 2) {
+    return <div key={i}>
+      <div style={{ width: "100%", height: "100vh" }} className={`Slider${i}`}>
+        <div className="title">세상끝날 날까지 멈추지 않습니다</div>
+        </div>
+    </div>;
+  } else if (i === 3) {
+    return <div key={i}>
+      <div style={{ width: "100%", height: "100vh" }} className={`Slider${i}`}>
+        <div className="title">예수님만이 드러나는 교회입니다.</div>
+        </div>
+    </div>;
+  } else {
+    return null;
+  }
 })
 
 const startSlide = 0;
@@ -21,7 +47,7 @@ const swipeOption = {
   startSlide: startSlide < paneNodes.length && startSlide > 0 ? startSlide : 0
 };
 
-export default class Carousel  extends React.Component {
+export default class Carousel extends React.Component {
   public ReactSwipe:any = this.ReactSwipe;
 
   public next () {
@@ -39,13 +65,13 @@ export default class Carousel  extends React.Component {
           swipeOptions={swipeOption}>
           {paneNodes}
         </ReactSwipe>
-        <div style={{ width:"100vw",height:"100vh",textAlign: "center" }}>
-          <button type="button" onClick={() => this.prev()}>
-            Prev
-          </button>
-          <button type="button" onClick={()=> this.next()}>
-            Next
-          </button>
+        <div className="Navigations">
+          <div className="leftButton" onClick={() => this.prev()}>
+            <Icon type="left" />
+          </div>
+          <div className="rightButton" onClick={()=> this.next()}>
+            <Icon type="right" />
+          </div>
         </div>
       </section>;
   }
