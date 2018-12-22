@@ -1,8 +1,12 @@
 
-import React from 'react';
-import {Carousel}  from "../Carousel/Carousel";
+import React  from 'react';
+
+import Carousel  from "../Carousel/Carousel";
+
+
 
 class Intro extends React.Component {
+
     public render() {
         return (
             <section>
