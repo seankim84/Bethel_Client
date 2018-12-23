@@ -1,31 +1,24 @@
 import { Icon } from 'antd';
 import React from 'react';
-import Modal from '../Modal';
+import ReactModal from '../Modal';
 import './Info.css';
 
 interface IState {
-  show: boolean
+  modalIsOpen: any;
 }
 
-interface IProps {
-  handleClose:any
-}
+class Info extends React.Component<IState>{
+  public state:IState = {
+    modalIsOpen: false
+  };
 
-class Info extends React.Component<IProps, IState>{
-  
-  constructor(props: IProps){
-    super(props)
-    this.state = {
-      show:false
-    }
+  public openModal() {
+    this.setState({ modalIsOpen: true })
   }
 
-  public showModal = () => {
-    this.setState({ show:true })
-  }
-
-  public hideModal = () => {
-    this.setState({ show:false })
+  public closeModal() {
+    this.setState({ 
+      modalIsOpen: false })
   }
 
   public render(){
@@ -38,11 +31,13 @@ class Info extends React.Component<IProps, IState>{
       </p>
         </div>
         <div className="WholeBox">
-          <div className="BoxLeft" onClick={this.showModal} onDoubleClick={this.hideModal}>
-            <Modal show={this.state.show} handleClose={this.hideModal}>
-                <p>Modal</p>
-                <p>Data</p>
-              </Modal>
+          <div className="BoxLeft" onClick={this.openModal}>
+            <ReactModal openModal={this.openModal}
+              closeModal={this.closeModal}
+               >
+               <button onClick={this.closeModal}>close </button>
+               sadfsafdasf
+               </ReactModal>
             <p>VISION</p>
             <Icon type="arrow-left" />
           </div>

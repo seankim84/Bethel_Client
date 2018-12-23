@@ -4,7 +4,7 @@ import Info from './InfoPresenter';
 class InfoContainer extends React.Component{
 
     public render(){
-        return <Info handleClose={false}/>;  
+        return <Info modalIsOpen={null}/>;  
     }
 }
 

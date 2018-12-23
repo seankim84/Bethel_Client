@@ -3,7 +3,6 @@ import React from "react";
 import ReactSwipe from "react-swipe";
 import "./Carousel.css";
 
-
 const numberOfSlide = 4;
 
 const paneNodes = Array.apply(null, Array(numberOfSlide)).map((_:any, i:any) => {
