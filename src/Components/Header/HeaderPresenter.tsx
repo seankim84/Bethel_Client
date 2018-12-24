@@ -15,13 +15,13 @@ const Header: React.SFC<IProps> = ({
     <section className="Header">
     <header>
         <div className="HeaderTop">
-            <h1>Bethel</h1>
+            <h1><Link className="linkTitle" to={'/'}>Bethel</Link></h1>
             <nav>
                 <ul>
-                    <li><Link to={'/intro'}>Intro</Link></li>
-                    <li>Team</li>
-                    <li>Family</li>
-                    <li>Insight</li>
+                    <li><Link className="link" to={'/intro'}>Intro</Link></li>
+                    <li><Link className="link" to={'/team'}>Team</Link></li>
+                    <li><Link className="link" to={'/family'}>Family</Link></li>
+                    <li><Link className="link" to={'/preach'}>Preach</Link></li>
                 </ul>
             </nav>
         </div>

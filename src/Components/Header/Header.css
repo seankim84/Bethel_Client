@@ -10,6 +10,7 @@ header .HeaderTop {
     align-items: center;
 }
 
+
 .Header h1 {
     margin-left: 3.5em;
     display: grid;
@@ -24,7 +25,6 @@ header .HeaderTop {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     list-style: none;
-    color: #ffffff;
     font-size: 1.4em;
 }
 
@@ -38,6 +38,9 @@ header .HeaderTop {
     color: black;
     padding-left:15px;
 }
+
+
+
 
 
 

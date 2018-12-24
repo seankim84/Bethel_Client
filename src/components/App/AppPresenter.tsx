@@ -3,10 +3,13 @@ import React from 'react';
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import EditAccount from '../Routes/EditAccount';
 import EmailLogin from '../Routes/EmailLogin';
+import Family from '../Routes/Family'
 import Home from '../Routes/Home';
 import Intro from '../Routes/Intro';
 import OutHome from '../Routes/OutHome';
+import Preach from '../Routes/Preach';
 import SocialLogin from '../Routes/SocialLogin';
+import Team from '../Routes/Team';
 
 interface IProps {
     isLoggedIn: boolean
@@ -32,6 +35,9 @@ const LoggedInRoutes: React.SFC = () => (
     <Route path={"/"} exact={true} component={Home} />
     <Route path={"/edit-account"} exact={true} component={EditAccount} />
     <Route path={"/intro"} exact={true} component={Intro} />
+    <Route path={"/team"} exact={true} component={Team} />
+    <Route path={"/family"} exact={true} component={Family} />
+    <Route path={"/preach"} exact={true} component={Preach} />
     <Redirect from={"*"} to={"/"} />
   </Switch>
 ); 
