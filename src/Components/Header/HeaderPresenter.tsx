@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './Header.css';
 
 interface IProps {
@@ -17,7 +18,7 @@ const Header: React.SFC<IProps> = ({
             <h1>Bethel</h1>
             <nav>
                 <ul>
-                    <li>Intro</li>
+                    <li><Link to={'/intro'}>Intro</Link></li>
                     <li>Team</li>
                     <li>Family</li>
                     <li>Insight</li>
