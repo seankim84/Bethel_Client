@@ -3,7 +3,7 @@ import Header from '../../Header';
 
 class Team extends React.Component {
   public render() {
-    return <Header />;
+    return <Header id=""/>;
   }
 }
 

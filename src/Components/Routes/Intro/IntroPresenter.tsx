@@ -4,7 +4,7 @@ import Header from '../../Header';
 class Info extends React.Component {
     public render(){
         return(
-            <Header />
+            <Header id=""/>
         )
     }
 }

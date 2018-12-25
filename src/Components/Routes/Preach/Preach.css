@@ -1,0 +1,83 @@
+.preachBody {
+    width:100%;
+    height: 100%;
+
+}
+
+.preach {
+    top:8vh;
+    position: absolute;
+    background: url('../../../images/preach.jpg') center/cover fixed no-repeat;
+    height: 50vh;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.preachTitle {
+    color: white;
+    font-size: 2rem;
+}
+
+.preach2 {
+    top:59vh;
+    width:100%;
+    height:40vh;
+    padding: 0 10px;
+    position: absolute;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+}
+
+#preachBox {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.saigon {
+    background: url('../../../images/saigon.jpg') center/cover no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.phumyhung {
+  background: url('../../../images/phumyhung.jpg') center/cover no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.airport {
+  background: url('../../../images/airport.jpg') center/cover no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.hanoi {
+  background: url('../../../images/hanoi.jpg') center/cover no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.preach2 .saigon:hover {
+  opacity: 0.7
+}
+
+.preach2 .phumyhung:hover {
+  opacity: 0.7
+}
+
+.preach2 .airport:hover {
+  opacity: 0.7
+}
+
+.preach2 .hanoi:hover {
+  opacity: 0.7
+}

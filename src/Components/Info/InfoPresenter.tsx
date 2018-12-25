@@ -1,6 +1,5 @@
 import { Icon } from 'antd';
 import React from 'react';
-import ReactModal from '../Modal';
 import './Info.css';
 
 interface IState {
@@ -32,12 +31,6 @@ class Info extends React.Component<IState>{
         </div>
         <div className="WholeBox">
           <div className="BoxLeft" onClick={this.openModal}>
-            <ReactModal openModal={this.openModal}
-              closeModal={this.closeModal}
-               >
-               <button onClick={this.closeModal}>close </button>
-               sadfsafdasf
-               </ReactModal>
             <p>VISION</p>
             <Icon type="arrow-left" />
           </div>
