@@ -31,7 +31,50 @@
     color: white;
 }
 
-.PeopleExplain span {
+.IntroExplain span {
     font-size: 1.5rem;
     text-decoration: none;
+}
+
+.IntroBox {
+    position: absolute;
+    top:60vh;  
+}
+
+
+.BoxExplain {
+    width: 100vw;
+    height: auto;
+    display:grid;
+    justify-items: center;
+    align-items: flex-end;
+    font-size: 2.5rem ;
+    color: #7a7a7a;
+    margin: 3rem 0;
+}
+
+.Boxs {
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+#boxid {
+    display:grid;
+    align-items: center;
+    justify-items: center;
+}
+
+#boxid img {
+    width: 30vh;
+    height: 30vh;   
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.BoxTitle {
+    margin-top:1rem;
+    font-size: 2rem;
+    display:grid;
+    justify-items: center;
 }

@@ -1,0 +1,78 @@
+.Family {
+    margin: 0;
+    padding:0;
+    width: 100%;
+    height: 200vh;
+}
+
+.Familination {
+    width: 100%;
+    height: 50vh;
+    top: 8vh;
+    position: absolute;
+    background: url('../../../images/family.jpg') center/cover fixed no-repeat; 
+}
+
+.FamilyHeader {
+    height: 50vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.FamilyExplain {
+    display: grid;
+    justify-items: center;
+    color: white;
+}
+
+.FamilyExplain h1 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.FamilyExplain span {
+    font-size: 1.5rem;
+}
+
+.FamilyMain {
+    top: 58vh;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background: #e1e1e1;
+    
+}
+
+.FamilyMainHeader {
+    margin-top: 10vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.FamilyMainHeader h1 {
+    font-size: 3rem;
+}
+
+.FamilyMainHeader p {
+    font-size : 1.5rem;
+    color:#7a7a7a;
+}
+
+.FamilyPictures {
+    width:100%;
+    height: 70vh;
+    padding: 0 2rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+#boxId {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}

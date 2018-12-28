@@ -3,8 +3,6 @@ import React from 'react';
 import Main_Worship from '../../images/Main_Worship.jpg';
 import './Main.css';
 
-
-
 interface IProps {
     mainImage?: string;
 }
