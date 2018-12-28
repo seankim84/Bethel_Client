@@ -1,0 +1,37 @@
+.Intro {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 200vh;
+}
+
+.Introduction {
+    width: 100%;
+    height: 50vh;
+    top: 8vh;
+    position: absolute;
+    background: url('../../../images/intro.jpg') center/cover fixed no-repeat;
+}
+
+.IntroHeader {
+    height: 50vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.IntroExplain {
+    display: grid;
+    justify-items: center;
+    color: white;
+}
+
+.IntroExplain h1 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.PeopleExplain span {
+    font-size: 1.5rem;
+    text-decoration: none;
+}

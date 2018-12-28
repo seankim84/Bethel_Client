@@ -11,13 +11,14 @@ import Preach from '../Routes/Preach';
 import SocialLogin from '../Routes/SocialLogin';
 import Team from '../Routes/Team';
 
-interface IProps {
-    isLoggedIn: boolean
+export interface IProps {
+  isLoggedIn: boolean;
 };
+
 
 const AppPresenter: React.SFC<IProps> = ({ isLoggedIn }) => (
   <BrowserRouter>
-    {isLoggedIn ? <LoggedInRoutes /> : <LoggedOutRoutes />}
+    {isLoggedIn ? <LoggedInRoutes/> : <LoggedOutRoutes />}
   </BrowserRouter>
 );
 
@@ -38,9 +39,10 @@ const LoggedInRoutes: React.SFC = () => (
     <Route path={"/team"} exact={true} component={Team} />
     <Route path={"/family"} exact={true} component={Family} />
     <Route path={"/preach"} exact={true} component={Preach} />
+    <Route path={"/:isParams"} exact={true} component={Preach} />
     <Redirect from={"*"} to={"/"} />
   </Switch>
-); 
+);
 
 AppPresenter.propTypes = {
     isLoggedIn: PropTypes.bool.isRequired

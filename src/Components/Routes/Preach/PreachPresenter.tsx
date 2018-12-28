@@ -11,7 +11,7 @@ interface IProps {
 class Preach extends React.Component<IProps> {
     public render() {
         return (
-        <div>
+        <section>
             <Helmet>
               <title>Bethel | Preach</title>
             </Helmet>
@@ -29,7 +29,7 @@ class Preach extends React.Component<IProps> {
                     <div id="preachBox" className="hanoi">Hanoi Bethel </div>
                 </div>
             </div>
-        </div>
+        </section>
         );
     }
 }

@@ -1,6 +1,5 @@
 
 import React from "react";
-import { Link, Route, Router } from 'react-router-dom';
 import Preach from "./PreachPresenter";
 
 
@@ -11,12 +10,14 @@ const result = 10;
 const finalURL = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${channelID}&part=snippet,id&order=date&maxResults=${result}`
 
 interface IProps {
-    result: any
+    match: any
 }
 
 interface IState {
     resultyt: any
 }
+
+
 
 class PreachContainer extends React.Component<IProps,IState> {
     constructor(props:any){
@@ -41,9 +42,7 @@ class PreachContainer extends React.Component<IProps,IState> {
   public render() {
     return (
         <div>
-            <Preach handleClick={this.clicked}/>
-                <Router>
-                   <Link to={'/preach'} params={{saigon:"test"}}> 
+            <Preach handleClick={this.clicked} /> 
                     <div>
                         {this.state.resultyt.map((link:any, i:any) => {
                           console.log(link);
@@ -55,9 +54,7 @@ class PreachContainer extends React.Component<IProps,IState> {
                           return frame;
                         })}
                 </div>
-                </Link >
-                <Route path="/id" component={child} />
-                </Router>
+                
         </div>
     );
   }
