@@ -26,13 +26,13 @@ class Family extends React.Component {
                     </div>
                     <div className="FamilyPictures">
                             <div id="boxId" className="PictureBox1"><a target="_blank" href="https://freefrontend.com/css-timelines/">혜연</a></div>
-                        <div id="boxId" className="PictureBox1">2</div>
-                        <div id="boxId" className="PictureBox1">3</div>
-                        <div id="boxId" className="PictureBox1">4</div>
-                        <div id="boxId" className="PictureBox1">5</div>
-                        <div id="boxId" className="PictureBox1">6</div>
+                                <div id="boxId" className="PictureBox1">2</div>
+                                <div id="boxId" className="PictureBox1">3</div>
+                                <div id="boxId" className="PictureBox1">4</div>
+                                <div id="boxId" className="PictureBox1">5</div>
+                                <div id="boxId" className="PictureBox1">6</div>
+                            </div>
                     </div>
-                </div>
             </section>
             <Footer />
           </div>

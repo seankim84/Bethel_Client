@@ -39,7 +39,7 @@ const paneNodes = Array.apply(null, Array(numberOfSlide)).map((_:any, i:any) => 
 
 const startSlide = 0;
 const swipeOption = {
-  auto: 3000,
+  auto: 2000,
   contiuous: true,
   disableScroll: true,
   speed: 1800,

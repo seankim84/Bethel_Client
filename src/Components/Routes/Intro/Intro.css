@@ -38,7 +38,15 @@
 
 .IntroBox {
     position: absolute;
-    top:60vh;  
+    top:60vh;
+    width: 100vw; 
+    padding-top: 2.5rem; 
+}
+
+.IntroBox p {
+    display: grid;
+    justify-items: center;
+    font-size: 1.2rem;
 }
 
 
@@ -54,14 +62,30 @@
 }
 
 .Boxs {
+    padding-top: 1.5rem;
     display:grid;
     grid-template-columns: repeat(4,1fr);
+}
+
+.BoxBackground {
+    border: 1px dashed black;
+    border-radius: 50%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    
 }
 
 #boxid {
     display:grid;
     align-items: center;
     justify-items: center;
+}
+
+#boxid svg {
+    width: 12vw;
+    height:auto;
+    padding: 2rem;
 }
 
 #boxid img {
@@ -74,7 +98,7 @@
 
 .BoxTitle {
     margin-top:1rem;
-    font-size: 2rem;
+    font-size: 1.4rem;
     display:grid;
     justify-items: center;
 }
