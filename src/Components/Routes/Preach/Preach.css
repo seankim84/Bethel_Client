@@ -1,83 +1,58 @@
-.preachBody {
-    width:100%;
-    height: 100%;
-
+.Preach {
+  margin:0;
+  padding:0;
+  width:100vw;
+  height: 200vh;
 }
 
-.preach {
-    top:8vh;
-    position: absolute;
-    background: url('../../../images/preach.jpg') center/cover fixed no-repeat;
-    height: 50vh;
-    width: 100%;
-    display: grid;
-    align-items: center;
-    justify-content: center;
+.Preachs {
+  width:100%;
+  height:50vh;
+  position: absolute;
+  top: 8vh;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))
+  ,url('../../../images/preach.jpg') center/cover fixed no-repeat;
 }
 
-.preachTitle {
-    color: white;
-    font-size: 2rem;
-}
-
-.preach2 {
-    top:59vh;
-    width:100%;
-    height:40vh;
-    padding: 0 10px;
-    position: absolute;
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(4, 1fr);
-    align-items: center;
-}
-
-#preachBox {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: 1s ease;
-}
-
-.saigon {
-    background: url('../../../images/saigon.jpg') center/cover no-repeat;
-    width: 100%;
-    height: 100%;
-}
-
-.phumyhung {
-  background: url('../../../images/phumyhung.jpg') center/cover no-repeat;
+.PreachHeader {
   width: 100%;
-  height: 100%;
+  height: 50vh;
+  display:grid;
+  align-items: center;
 }
 
-.airport {
-  background: url('../../../images/airport.jpg') center/cover no-repeat;
-  width: 100%;
-  height: 100%;
+.PreachExplain {
+  display: grid;
+  justify-items: center;
 }
 
-.hanoi {
-  background: url('../../../images/hanoi.jpg') center/cover no-repeat;
-  width: 100%;
-  height: 100%;
+.PreachExplain h1  {
+  color: #ffffff;
+  font-size: 2.5rem;
 }
 
-.preach2 .saigon:hover {
-  opacity: 0.7
+.PreachExplain p {
+  color: #ffffff;
+  font-size : 1.5rem;
 }
 
-.preach2 .phumyhung:hover {
-  opacity: 0.7
+.PreachBox {
+  position: absolute;
+  top: 60vh;
+  width:100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2rem;
+  justify-items: center;
 }
 
-.preach2 .airport:hover {
-  opacity: 0.7
-}
+#box {
+  width:80%;
+  border: 1px solid black;
+  border-radius: 10px;
+  display:grid;
+  justify-content:center;
+  align-items:center;
 
-.preach2 .hanoi:hover {
-  opacity: 0.7
 }
