@@ -39,7 +39,50 @@ header .HeaderTop {
     padding-left:15px;
 }
 
+@media screen and (max-width:776px) {
+  .HeaderTop nav {
+    display: none;
+  }
+  .HeaderTitle {
+      display: none;
+  }
+}
 
+@media screen and (min-width:776px) {
+  .HeaderTop .ShadowTop  {
+    display: none;
+  }
+}
+
+.ShadowTop {
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-right:  2rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.ShadowTitle {
+    width: 100%;
+    font-size: 1.5rem;
+    display: grid;
+    justify-items: flex-start;
+    padding-left: 1.5rem;
+}
+
+.ShadowDown {
+    width: 100%;
+    display: grid;
+    justify-items: flex-end;
+
+}
+
+.dropDown {
+    font-size: 2rem;
+}
 
 
 

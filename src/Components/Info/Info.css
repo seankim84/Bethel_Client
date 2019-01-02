@@ -77,3 +77,34 @@
   color: black;
   padding-left: 2rem;
 }
+
+@media screen and (max-width: 776px){
+
+    .InfoTitle {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .InfoTitle h1{
+      font-size: 2rem;
+    }
+
+    .InfoTitle p {
+        width: 100%;
+        font-size: 0.85rem;
+    } 
+
+    .WholeBox {
+        width: 100%;
+        height: 100%;
+        display:grid;
+        grid-template-columns : auto; 
+    }
+
+    .BoxLeft {
+
+    }
+    .BoxRight {
+    }
+}

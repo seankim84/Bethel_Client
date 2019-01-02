@@ -27,7 +27,7 @@ class Info extends React.Component<IState>{
           <h1>Philociphy</h1>
           <p>
             베델은 이런 가치를 지향합니다. 여러분들과 이런여정을 떠나고 싶습니다.
-      </p>
+        </p>
         </div>
         <div className="WholeBox">
           <div className="BoxLeft" onClick={this.openModal}>
