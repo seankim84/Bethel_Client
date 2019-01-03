@@ -17,7 +17,7 @@ class Preach extends React.Component<IProps> {
                     <Helmet>
                       <title>Bethel | Preach</title>
                     </Helmet>
-                    <Header id="" />
+                    <Header classname="preachColor" id="" />
                     <div className="Preachs">
                         <div className="PreachHeader ">
                             <div className="PreachExplain">

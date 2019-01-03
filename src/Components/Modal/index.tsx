@@ -1,2 +1,2 @@
-import ReactModal from './Modal';
-export default ReactModal;
+import Modal from './Modal';
+export default Modal;

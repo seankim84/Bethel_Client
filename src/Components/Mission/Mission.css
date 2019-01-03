@@ -45,6 +45,9 @@
     .Mission {
         width: 100%;
         height: 100%;
+        display: grid;
+        justify-items: center;
+        align-items: center;
     }
 
     .MissionTitle h1{
@@ -57,7 +60,7 @@
     }
 
     .PhotoChild {
-        width: 360px;
+        width: 100%;
         height: auto;
         display:  grid;
         justify-items: center;

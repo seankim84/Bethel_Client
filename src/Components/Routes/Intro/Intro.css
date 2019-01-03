@@ -23,7 +23,6 @@
 .IntroExplain {
     display: grid;
     justify-items: center;
-    color: white;
 }
 
 .IntroExplain h1 {
@@ -31,9 +30,9 @@
     color: white;
 }
 
-.IntroExplain span {
+.IntroExplain p {
     font-size: 1.5rem;
-    text-decoration: none;
+    color:  white;
 }
 
 .IntroBox {
@@ -101,4 +100,8 @@
     font-size: 1.4rem;
     display:grid;
     justify-items: center;
+}
+
+.IntroColor {
+    color: black;
 }

@@ -4,13 +4,15 @@ import Footer from "../../Footer";
 import Header from '../../Header';
 import './Family.css';
 
+
+
 class Family extends React.Component {
     public render() {
         return (
           <div>
             <section className="Family">
               <Helmet><title>Bethel | Family</title></Helmet>
-              <Header id="" />
+              <Header classname="HeaderColor" id="" />
               <div className="Familination">
                     <div className="FamilyHeader">
                         <div className="FamilyExplain">

@@ -1,24 +1,30 @@
 import { Icon } from 'antd';
 import React from 'react';
+import Modal from '../Modal'
 import './Info.css';
 
-interface IState {
-  modalIsOpen: any;
-}
-
-class Info extends React.Component<IState>{
-  public state:IState = {
-    modalIsOpen: false
-  };
-
-  public openModal() {
-    this.setState({ modalIsOpen: true })
+class Info extends React.Component{
+  public state = {
+    show: false
+  }
+  public showModal():void {
+    this.setState({ show:true })
   }
 
-  public closeModal() {
-    this.setState({ 
-      modalIsOpen: false })
+  public hideModal():void  {
+    this.setState({show: false})
   }
+
+  public ClickEvent() {
+    return <main>
+        <h1>React Modal</h1>
+        <Modal showHideClassname="" show={this.state.show} handleClose={this.hideModal}>
+          <p>sean</p>
+          <p>Data</p>
+        </Modal>
+      </main>;
+  }
+
 
   public render(){
     return (
@@ -30,14 +36,14 @@ class Info extends React.Component<IState>{
         </p>
         </div>
         <div className="WholeBox">
-          <div className="BoxLeft" onClick={this.openModal}>
+          <div className="BoxLeft" onClick={this.showModal}>
             <p>VISION</p>
-            <Icon type="arrow-left" />
+            <Icon className="arrow" type="arrow-left" />
           </div>
 
-          <div className="BoxRight">
+          <div className="BoxRight" onClick={this.ClickEvent}>
             <p>VALUE</p>
-            <Icon type="arrow-right" />
+            <Icon className="arrow" type="arrow-right" />
           </div>
         </div>
       </section>

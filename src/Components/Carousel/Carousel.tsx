@@ -9,27 +9,27 @@ const paneNodes = Array.apply(null, Array(numberOfSlide)).map((_:any, i:any) => 
   if(i===0){
     return (
       <div key={i}>
-        <div style={{ width: "100%", height: "100vh" }} className={`Slider${i}`}>
-          <div className="title">안녕하세요 베델입니다</div>
+        <div id="sliderBox" style={{ width: "100%", height: "100vh" }} className={`Slider${i}`}>
+          <div className="introTitle">안녕하세요 베델입니다</div>
         </div>
       </div>
     ) 
   } else if (i===1){
     return <div key={i}>
-        <div style={{ width: "100%", height: "100vh" }} className={`Slider${i}`}>
-          <div className="title">호치민부터 하노이 하노이부터 미얀마 미얀마부터 아프리카까지</div>
+      <div id="sliderBox" style={{ width: "100%", height: "100vh" }} className={`Slider${i}`}>
+          <div className="introTitle">호치민부터 하노이까지 미얀마에서 아프리카까지</div>
         </div>
       </div>;
   } else if (i === 2) {
     return <div key={i}>
-      <div style={{ width: "100%", height: "100vh" }} className={`Slider${i}`}>
-        <div className="title">세상끝날 날까지 멈추지 않습니다</div>
+        <div id="sliderBox" style={{ width: "100%", height: "100vh" }} className={`Slider${i}`}>
+          <div className="introTitle">세상끝날 날까지 멈추지 않습니다</div>
         </div>
-    </div>;
+      </div>;
   } else if (i === 3) {
     return <div key={i}>
-      <div style={{ width: "100%", height: "100vh" }} className={`Slider${i}`}>
-        <div className="title">예수님만이 드러나는 교회입니다.</div>
+      <div id="sliderBox" style={{ width: "100%", height: "100vh" }} className={`Slider${i}`}>
+        <div className="introTitle">예수님만이 드러나는 교회입니다.</div>
         </div>
     </div>;
   } else {
@@ -39,7 +39,7 @@ const paneNodes = Array.apply(null, Array(numberOfSlide)).map((_:any, i:any) => 
 
 const startSlide = 0;
 const swipeOption = {
-  auto: 2000,
+  auto: 3000,
   contiuous: true,
   disableScroll: true,
   speed: 1800,

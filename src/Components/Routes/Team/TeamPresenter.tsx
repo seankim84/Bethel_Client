@@ -10,12 +10,12 @@ class Team extends React.Component {
       <div>
       <section className="Team">
       <Helmet><title>Bethel | Team</title></Helmet>
-      <Header id="" />
+      <Header classname="TeamColor" id="" />
         <div className="People">
           <div className="PeopleHeader">
             <div className="PeopleExplain ">
               <h1>Team</h1>
-              <span>다양한 팀과 전문성이 모여 최고의 팀워크를 만듭니다.</span>
+              <p>다양한 팀과 전문성이 모여 최고의 팀워크를 만듭니다.</p>
             </div>
           </div>
           <div className="PeopleBox">

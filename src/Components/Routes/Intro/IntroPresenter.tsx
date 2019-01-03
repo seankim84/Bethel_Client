@@ -15,12 +15,12 @@ class Info extends React.Component {
             <div>
             <section className="Intro">
                 <Helmet><title>Bethel | Intro</title></Helmet>
-                <Header id="" />
+                <Header classname="IntroColor" id="" />
                     <div className="Introduction">
                       <div className="IntroHeader">
                         <div className="IntroExplain">
                             <h1>Intro</h1>
-                            <span>여러개의 소개</span>
+                            <p>여러개의 소개</p>
                         </div>
                     </div>
                 </div>

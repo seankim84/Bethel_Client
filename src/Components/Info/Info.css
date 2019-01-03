@@ -92,7 +92,8 @@
 
     .InfoTitle p {
         width: 100%;
-        font-size: 0.85rem;
+        font-size: 1rem;
+        text-align: center; 
     } 
 
     .WholeBox {
@@ -102,9 +103,12 @@
         grid-template-columns : auto; 
     }
 
-    .BoxLeft {
-
+    .WholeBox p {
+        font-size: 2rem;
+        padding-top: 2rem;
     }
-    .BoxRight {
+
+    .arrow {
+        display: none;
     }
 }
