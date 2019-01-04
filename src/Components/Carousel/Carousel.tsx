@@ -66,10 +66,10 @@ export default class Carousel extends React.Component {
         </ReactSwipe>
         <div className="Navigations">
           <div className="leftButton" onClick={() => this.prev()}>
-            <Icon type="left" />
+            <Icon className="arrowIconLeft" type="left" />
           </div>
           <div className="rightButton" onClick={()=> this.next()}>
-            <Icon type="right" />
+            <Icon className="arrowIconRight" type="right" />
           </div>
         </div>
       </section>;

@@ -1,20 +1,34 @@
+import { Icon } from 'antd';
 import React from 'react';
 import './Modal.css';
 
 interface IProps {
     handleClose:any,
-    show:any,
-    children:any,
-    showHideClassname: any
+    showleft?:boolean,
+    showright?:boolean,
+    children:any
 };
 
-const Modal: React.SFC<IProps> = props => (
-  <div className={props.showHideClassname}>
-    <section className="modal-main">
-      {props.children}
-      <button onClick={props.handleClose}>close</button>
-    </section>
-  </div>
-);
+export const ModalLeft: React.SFC<IProps> = props => {  
+    const showHideClassName = props.showleft ? "modal display-block" : "modal display-none";
+    return (
+        <div className={showHideClassName}>
+            <section className="modal-main">
+            <button onClick={props.handleClose}><Icon style={{fontSize:"2.2rem"}} type="close" /></button>
+              {props.children}
+            </section>
+        </div>
+  )
+};
 
-export default Modal;
+export const ModalRight: React.SFC<IProps> = props => {
+    const showHideClassName = props.showright ? "modal display-block" : "modal display-none";
+    return (
+        <div className={showHideClassName}>
+            <section className="modal-main">
+                <button onClick={props.handleClose}><Icon style={{ color: "#ffffff", fontSize: "2.2rem" }} type="close" /></button>
+                {props.children}
+            </section>
+        </div>
+    )
+};

@@ -53,21 +53,34 @@
 }
 
 .leftButton {
-    padding-left:3rem;
+    width: 10vw;
+    padding-left:1rem;
     color: #ffffff;
     cursor: pointer;
-    
-}:hover {
-    color: black;
+    display: grid;
+    justify-items: center;
+}
+
+.leftButton .arrowIconLeft:hover{
+    padding-right: 1rem;
+    color: #3d3b41;
+    transition: 1s ease;
+}
+
+.rightButton .arrowIconRight:hover {
+  padding-left: 1rem;
+  color: #3d3b41;
+  transition: 1s ease-out;
 }
 
 .rightButton {
-    padding-right:3rem;
+    width: 10vw;
+    padding-right:1rem;
     color: #ffffff;
     cursor: pointer;
-        
-}:hover {
-    color: black;
+    transition: 1s ease;
+    display: grid;
+    justify-items: center; 
 }
 
 .introTitle {

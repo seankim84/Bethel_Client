@@ -112,3 +112,41 @@
         display: none;
     }
 }
+
+.modalboxLeft {
+    background: url('../../images/LeftBox.jpg') center/cover no-repeat;
+    text-align: center;
+    padding: 2rem 2rem;
+}
+
+.modalboxLeft h1 {
+    font-size: 3rem;
+}
+
+.modalboxLeft span {
+    font-size: 1.5rem;
+}
+
+.modalboxLeft p {
+    font-size: 1rem;
+}
+
+.modalboxRight {
+  background: url('../../images/RightBox.jpg') center/cover no-repeat;
+  text-align: center;
+  padding: 2rem 2rem;
+  color:#ffffff;
+}
+
+.modalboxRight h1 {
+  font-size: 3rem;
+  color:#ffffff;
+}
+
+.modalboxRight span {
+  font-size: 1.5rem;
+}
+
+.modalboxRight p {
+  font-size: 1rem;
+}

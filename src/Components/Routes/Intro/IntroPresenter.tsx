@@ -6,6 +6,7 @@ import Helmet from 'react-helmet';
 // import saigon from "../../../images/saigonIcon.png";
 import Footer from '../../Footer';
 import Header from '../../Header';
+import TabSlider from '../../Tab';
 
 import './Intro.css';
 
@@ -56,6 +57,9 @@ class Info extends React.Component {
                                 <span>Bethel Church</span>
                             </div>
                         </div>
+                    </div>
+                    <div className="TabBox">
+                        <TabSlider />
                     </div>
                 </div>
             </section>

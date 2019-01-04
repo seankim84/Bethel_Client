@@ -1,0 +1,24 @@
+#Tab {
+    width: 100vw;
+    height:100vh;
+}
+
+.TabBox1 {
+    background: url('../../images/church1.jpg') center/cover  no-repeat;
+}
+
+.TabBox2 {
+  background: url('../../images/church2.jpg') center/cover  no-repeat;
+}
+
+.TabBox3 {
+  background: url('../../images/church3.jpg') center/cover  no-repeat;
+}
+
+.TabBox4 {
+  background: url('../../images/church4.jpg') center/cover  no-repeat;
+}
+
+.TabBox5 {
+  background: url('../../images/church5.jpg') center/cover  no-repeat;
+}
