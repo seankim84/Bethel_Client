@@ -4,8 +4,6 @@ import Footer from "../../Footer";
 import Header from '../../Header';
 import './Family.css';
 
-
-
 class Family extends React.Component {
     public render() {
         return (
@@ -17,7 +15,7 @@ class Family extends React.Component {
                     <div className="FamilyHeader">
                         <div className="FamilyExplain">
                             <h1>Family</h1>
-                            <span>가족들</span>
+                            <span>We are the One</span>
                         </div>
                     </div>
                 </div>
@@ -27,13 +25,13 @@ class Family extends React.Component {
                         <p>Family Span</p>
                     </div>
                     <div className="FamilyPictures">
-                            <div id="boxId" className="PictureBox1"><a target="_blank" href="https://freefrontend.com/css-timelines/">혜연</a></div>
-                                <div id="boxId" className="PictureBox1">2</div>
-                                <div id="boxId" className="PictureBox1">3</div>
-                                <div id="boxId" className="PictureBox1">4</div>
-                                <div id="boxId" className="PictureBox1">5</div>
-                                <div id="boxId" className="PictureBox1">6</div>
-                            </div>
+                            <div id="boxId" className="PictureBox1">1</div>
+                            <div id="boxId" className="PictureBox1">2</div>
+                            <div id="boxId" className="PictureBox1">3</div>
+                            <div id="boxId" className="PictureBox1">4</div>
+                            <div id="boxId" className="PictureBox1">5</div>
+                            <div id="boxId" className="PictureBox1">6</div>
+                        </div>
                     </div>
             </section>
             <Footer />

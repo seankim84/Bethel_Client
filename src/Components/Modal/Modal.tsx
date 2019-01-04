@@ -26,7 +26,7 @@ export const ModalRight: React.SFC<IProps> = props => {
     return (
         <div className={showHideClassName}>
             <section className="modal-main">
-                <button onClick={props.handleClose}><Icon style={{ color: "#ffffff", fontSize: "2.2rem" }} type="close" /></button>
+                <button  onClick={props.handleClose}><Icon style={{ color: "#ffffff", fontSize: "2.2rem" }} type="close" /></button>
                 {props.children}
             </section>
         </div>

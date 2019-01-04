@@ -10,7 +10,7 @@
 }
 
 .MissionTitle {
-    padding-top:3.5rem;
+    padding-top: 1rem;
     width:  100%;
     display: grid;
     align-items: center ;
@@ -30,15 +30,63 @@
 
 .PhotoBox {
     width:90vw;
-    height: 70vh;
+    height: 80vh;
     padding-bottom: 2rem;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
 }
 
-.PhotoChild {
-    border: 1px solid black;
+#PhotoChild {
+    border: 1px solid none;
+    
+}
+
+#PhotoChild img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    -webkit-transition: 0.4s ease;
+    transition:0.4s ease;
+} 
+
+.PhotoChild1 img:hover {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+  cursor: zoom-in
+}
+
+.PhotoChild2 img:hover {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+  cursor: zoom-in
+}
+
+.PhotoChild3 img:hover {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+  cursor: zoom-in
+}
+
+.PhotoChild4 img:hover {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+  cursor: zoom-in
+}
+
+
+.PhotoChild5 img:hover {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+  cursor: zoom-in
+}
+
+
+.PhotoChild6 img:hover {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+  cursor: zoom-in
 }
 
 @media screen and (max-width:776px){
@@ -56,15 +104,14 @@
 
     .PhotoBox {
         display: grid;
-        grid-template-columns : repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
-    .PhotoChild {
-        width: 100%;
-        height: auto;
-        display:  grid;
-        justify-items: center;
-        align-items:  center;
+    .PhotoChild3,
+    .PhotoChild4,
+    .PhotoChild5,
+    .PhotoChild6 {
+        display :none;
     }
 
 }

@@ -3,6 +3,7 @@ import  Footer from '../Footer';
 import './Contact.css'
 
 const ContactPresenter: React.SFC = ({}) => (
+  <div>
   <section className="Contact">
     <div className="ContactTitle">
         <h1>Contact Us</h1>
@@ -16,6 +17,7 @@ const ContactPresenter: React.SFC = ({}) => (
     <Footer />
     </div>
   </section>
+  </div>
 );
 
 export default ContactPresenter;

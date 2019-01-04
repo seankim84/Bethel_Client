@@ -15,7 +15,7 @@ class Team extends React.Component {
           <div className="PeopleHeader">
             <div className="PeopleExplain ">
               <h1>Team</h1>
-              <p>다양한 팀과 전문성이 모여 최고의 팀워크를 만듭니다.</p>
+              <p>All Ministers</p>
             </div>
           </div>
           <div className="PeopleBox">

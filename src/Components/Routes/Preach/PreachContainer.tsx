@@ -2,7 +2,6 @@
 import React from "react";
 import Preach from "./PreachPresenter";
 
-
 const API_KEY = "AIzaSyCf68ynB_ICL9JALyWK0AtaUKC848cMRHI";
 const channelID = "UC2FkjUXW5s9r5ty8qpFFRUA";
 const result = 10;

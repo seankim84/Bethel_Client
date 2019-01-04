@@ -45,7 +45,7 @@ class Info extends React.Component<IState>{
             <p>VALUE</p>
             <Icon className="arrow" type="arrow-right" />
           </div>
-          <div>
+          <div onClick={this.hideModal}>
             <ModalLeft showleft={this.state.showleft} handleClose={this.hideModal}>
               <div className="modalboxLeft">
                 <h1>Vision</h1>

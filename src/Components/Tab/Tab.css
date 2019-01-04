@@ -1,24 +1,78 @@
 #Tab {
+    margin: 0;
+    padding: 0;
     width: 100vw;
-    height:100vh;
+    height:auto;
 }
 
 .TabBox1 {
-    background: url('../../images/church1.jpg') center/cover  no-repeat;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url('../../images/church1.jpg') center/cover no-repeat;
 }
 
 .TabBox2 {
-  background: url('../../images/church2.jpg') center/cover  no-repeat;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),url('../../images/church2.jpg') center/cover no-repeat;
 }
 
 .TabBox3 {
-  background: url('../../images/church3.jpg') center/cover  no-repeat;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),url('../../images/church3.jpg') center/cover no-repeat;
 }
 
 .TabBox4 {
-  background: url('../../images/church4.jpg') center/cover  no-repeat;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),url('../../images/church4.jpg') center/cover no-repeat;
 }
 
 .TabBox5 {
-  background: url('../../images/church5.jpg') center/cover  no-repeat;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),url('../../images/church5.jpg') center/cover no-repeat;
+} 
+
+.ant-tabs-nav-container {
+  top:-6.5rem;
+  color: #ffffff;
+  text-decoration: none;
+  display: grid;
+  justify-items: center;
+  height: 5vh;
+  border-style: none;
+} 
+
+.ant-tabs-bar .ant-tabs-bottom-bar{
+  border:none;
+  border-style: none;
 }
+.ant-tabs-bottom-bar {
+  border-style: none;
+  border: none;
+}
+
+.TabIntro {
+  width: 100%;
+  height: 95vh;
+  display: grid;
+  justify-items: flex-end;
+  padding-right: 3rem;
+  align-content: center;
+  color: #ffffff;
+}
+
+.TabIntro h2 {
+  font-size: 3rem;  
+  font-family: 'Libre Baskerville',
+  serif;
+}
+
+.TabIntro span {
+  font-size: 2rem;
+  font-family: 'Patua One', cursive;
+  ;
+}
+
+.TabIntro p {
+  font-size: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding-top: 3rem;
+  padding-left: 8rem;
+  font-family: 'Archivo Narrow',
+  sans-serif;
+}
+

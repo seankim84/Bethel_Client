@@ -10,7 +10,8 @@
     height: 50vh;
     top: 8vh;
     position: absolute;
-    background: url('../../../images/family.jpg') center/cover fixed no-repeat; 
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url('../../../images/family.jpg') center/cover fixed no-repeat;
 }
 
 .FamilyHeader {
