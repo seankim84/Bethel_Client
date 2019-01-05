@@ -28,7 +28,7 @@ class Preach extends React.Component<IProps> {
                     </div>
                     <div className="PreachBox">
                         <div id="box" className="PreachBox1">
-                            첫번째 박스
+                            <button onClick={this.props.handleClick}>button</button>
                         </div>
                         <div id="box" className="PreachBox1">
                             두번째 박스

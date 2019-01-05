@@ -16,8 +16,6 @@ interface IState {
     resultyt: any
 }
 
-
-
 class PreachContainer extends React.Component<IProps,IState> {
     constructor(props:any){
         super(props);
