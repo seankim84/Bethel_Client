@@ -1,0 +1,33 @@
+/*Video Presenter*/
+
+/* Video */ 
+#boxId {
+   width: 100vw;
+   height: 100vh; 
+   border: none;
+}
+
+.itemBox0 {
+    background: url('../../images/items1.jpg') center/cover no-repeat;
+}
+
+.itemBox1 {
+    background: url('../../images/items2.jpg') center/cover no-repeat;
+}
+
+.itemBox2 {
+  background: url('../../images/items3.jpg') center/cover no-repeat;
+}
+
+.itemBox3 {
+  background: url('../../images/items4.jpg') center/cover no-repeat;
+}
+
+.itemBox4 {
+  background: url('../../images/items5.jpg') center/cover no-repeat;
+}
+
+.App {
+    width: 100vw;
+    height: 100vh;
+}

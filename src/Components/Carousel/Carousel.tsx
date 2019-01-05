@@ -3,6 +3,7 @@ import React from "react";
 import ReactSwipe from "react-swipe";
 import "./Carousel.css";
 
+
 const numberOfSlide = 4;
 
 const paneNodes = Array.apply(null, Array(numberOfSlide)).map((_:any, i:any) => {
@@ -45,6 +46,7 @@ const swipeOption = {
   speed: 1800,
   startSlide: startSlide < paneNodes.length && startSlide > 0 ? startSlide : 0
 };
+
 
 export default class Carousel extends React.Component {
   public ReactSwipe:any = this.ReactSwipe;

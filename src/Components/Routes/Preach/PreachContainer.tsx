@@ -1,60 +1,37 @@
-
 import React from "react";
-import Preach from "./PreachPresenter";
+import Helmet from 'react-helmet';
+import Footer from '../../Footer';
+import Header from "../../Header";
+import Video from '../../Video';
+import './Preach.css';
 
-const API_KEY = "AIzaSyCf68ynB_ICL9JALyWK0AtaUKC848cMRHI";
-const channelID = "UC2FkjUXW5s9r5ty8qpFFRUA";
-const result = 10;
-
-const finalURL = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${channelID}&part=snippet,id&order=date&maxResults=${result}`
-
-interface IProps {
-    match: any
-}
-
-interface IState {
-    resultyt: any
-}
-
-class PreachContainer extends React.Component<IProps,IState> {
-    constructor(props:any){
-        super(props);
-        this.state = {
-            resultyt: []
-        };
-        this.clicked = this.clicked.bind(this)
+class Preach extends React.Component {
+    public render() {
+        return (
+            <div>
+                <section className="Preach">
+                    <Helmet>
+                      <title>Bethel | Preach</title>
+                    </Helmet>
+                    <Header classname="preachColor" id="" />
+                    <div className="Preachs">
+                        <div className="PreachHeader ">
+                            <div className="PreachExplain">
+                                <h1>Preach</h1>
+                                <p>귀 있는 자는 들을지어다 마 / 11:15</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="PreachBox">
+                        <div id="box" className="PreachBox1">
+                            <Video />
+                        </div>
+                    </div>
+                </section>
+                <Footer />
+            </div>
+        );
     }
-
-    public clicked(){
-        fetch(finalURL)
-            .then(response => response.json())// SUCCESS
-            .then(responseJson => {
-                const resultyt = responseJson.items.map((obj:any) => "https://www.youtube.com/embed/"+obj.id.videoId);
-                this.setState({resultyt});
-                console.log(resultyt)
-            })
-            .catch(response => { console.log(response) }); // ERROR
-    }
-
-  public render() {
-    return (
-        <div>
-            <Preach handleClick={this.clicked} /> 
-                    <div>
-                        {this.state.resultyt.map((link:any, i:any) => {
-                          console.log(link);
-                          const frame = <div key={i}>
-                              <iframe width="560px" height="315px" src={link} frameBorder="0" allowFullScreen={true}>
-                                youtube
-                              </iframe>
-                            </div>;
-                          return frame;
-                        })}
-                </div>
-                
-        </div>
-    );
-  }
 }
 
-export default PreachContainer;
+export default Preach;
