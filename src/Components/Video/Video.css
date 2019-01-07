@@ -1,33 +1,68 @@
 /*Video Presenter*/
+#VideoPresenterBox {
+  display:grid;
+  width: auto;
+  height: auto;
+  align-items:center;
+  justify-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.VideoFrame {
+  width: 100%;
+  height: 100%;
+}
+
+.VideoFrame .innerFrame {
+  width:100%;
+  height: 100%;
+}
+
+.ViedoExplain {
+  text-align: center;
+  width:100%;
+  height:60%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;  
+  align-content: center;
+  justify-items: center;
+}
+
+.ViedoExplain h3 {
+  height: auto;
+  display: grid;
+  align-content: center;
+  font-size: 1.5rem;;
+  font-family: 'Viga', sans-serif;
+}
+
+.ViedoExplain p {
+  display: grid;
+  font-size: 1rem;
+  align-items: center;
+}
+
+.VideoSpan {
+  height: auto;
+  display:flex;
+  width: 100%;
+
+}
+
+.VideoSpan span {
+  display: flex;
+  width:100%;
+  justify-content: center;
+  padding-right:1.5rem;
+  color: #2157a7;
+  font-size: 1.5rem;
+}
 
 /* Video */ 
-#boxId {
-   width: 100vw;
-   height: 100vh; 
-   border: none;
-}
-
-.itemBox0 {
-    background: url('../../images/items1.jpg') center/cover no-repeat;
-}
-
-.itemBox1 {
-    background: url('../../images/items2.jpg') center/cover no-repeat;
-}
-
-.itemBox2 {
-  background: url('../../images/items3.jpg') center/cover no-repeat;
-}
-
-.itemBox3 {
-  background: url('../../images/items4.jpg') center/cover no-repeat;
-}
-
-.itemBox4 {
-  background: url('../../images/items5.jpg') center/cover no-repeat;
-}
-
-.App {
-    width: 100vw;
-    height: 100vh;
+.ItemBox {
+  height: 90%;
+  width: 100%;
+  display: grid;
+  
 }

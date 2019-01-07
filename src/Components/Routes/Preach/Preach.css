@@ -36,13 +36,17 @@
   font-size : 1.5rem;
 }
 
-.PreachBox {
+.PreachBox1 {
   position: absolute;
-  top: 60vh;
+  top: 70vh;
   width:100vw;
   height: 100vh;
-  display: grid;
-  justify-items: center;
+  display:grid;
+  grid-column-gap: 2rem;
+  grid-row-gap: 5rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 5rem;
+  background: "#f5f9fc"
 }
 
 .preachColor {

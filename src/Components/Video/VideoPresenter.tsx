@@ -6,15 +6,24 @@ interface IProps  {
     description: string,
     videoId: string,
     className: string,
-    id:string 
+    key: any;
 }
 
 const VideoPresenter:React.SFC<IProps> = (props) => {
-    return <div className={props.className} id={props.id}>
-          <h1>{props.title}</h1>
-          <span>{props.description}</span>
-        <iframe width="560px" height="315px" src={"https://www.youtube.com/embed/" + `${props.videoId}`} frameBorder="0" allowFullScreen={true} />
-      </div>;
+    return (
+        <div id="VideoPresenterBox" className={props.className}>
+          <div className="VideoFrame">
+            <iframe className="innerFrame" src={"https://www.youtube.com/embed/" + `${props.videoId}`} frameBorder="0" allowFullScreen={true} />
+          </div>
+          <div className="ViedoExplain">
+            <h3>[ {props.title} ]</h3>
+            <p>{props.description}</p>
+            <div className="VideoSpan">
+                <span>공항 베델교회 장상진 목사</span>
+            </div>
+          </div>
+      </div>
+      );
 }
 
 export default VideoPresenter;
