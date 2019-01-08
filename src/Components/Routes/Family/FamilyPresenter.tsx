@@ -25,16 +25,16 @@ class Family extends React.Component {
                         <p>Family Span</p>
                     </div>
                     <div className="FamilyPictures">
-                            <div id="boxId" className="PictureBox1">1</div>
-                            <div id="boxId" className="PictureBox1">2</div>
-                            <div id="boxId" className="PictureBox1">3</div>
-                            <div id="boxId" className="PictureBox1">4</div>
-                            <div id="boxId" className="PictureBox1">5</div>
-                            <div id="boxId" className="PictureBox1">6</div>
-                        </div>
+                        <div id="boxId" className="PictureBox1">1</div>
+                        <div id="boxId" className="PictureBox1">2</div>
+                        <div id="boxId" className="PictureBox1">3</div>
+                        <div id="boxId" className="PictureBox1">4</div>
+                        <div id="boxId" className="PictureBox1">5</div>
+                        <div id="boxId" className="PictureBox1">6</div>
                     </div>
+                </div>
             </section>
-            <Footer />
+                <Footer />
           </div>
         );
     }

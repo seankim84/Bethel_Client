@@ -45,24 +45,41 @@
 
 .VideoSpan {
   height: auto;
-  display:flex;
   width: 100%;
-
+  display:grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .VideoSpan span {
   display: flex;
   width:100%;
   justify-content: center;
-  padding-right:1.5rem;
   color: #2157a7;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 /* Video */ 
-.ItemBox {
-  height: 90%;
-  width: 100%;
-  display: grid;
-  
+.ItemBox0:hover {
+  transition: 0.3s ease;
+  margin: 0 10px;
+}
+.ItemBox1:hover {
+  transition: 0.3s ease;
+  margin: 0 10px;
+}
+.ItemBox2:hover {
+  transition: 0.3s ease;
+  margin: 0 10px;
+}
+.ItemBox3:hover {
+  transition: 0.3s ease;
+  margin: 0 10px;
+}
+.ItemBox4:hover {
+  transition: 0.3s ease;
+  margin: 0 10px;
+}
+.ItemBox5:hover {
+  transition: 0.3s ease;
+  margin: 0 10px;
 }

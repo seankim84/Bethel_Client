@@ -21,9 +21,10 @@ export default class Video extends React.Component{
         const items = this.state.items.map((preach: any, i: any) => {
                 return(
                     <VideoPresenter
-                        className="ItemBox"
+                        className={`ItemBox${i}`}
                         videoId={preach.id.videoId}
                         description={preach.snippet.description}
+                        publisedAt={preach.snippet.publishedAt.substr(0, 10).replace(/-/gi,'.')}
                         title={preach.snippet.title}
                         key={i}
                     />

@@ -6,7 +6,8 @@ interface IProps  {
     description: string,
     videoId: string,
     className: string,
-    key: any;
+    key: any,
+    publisedAt:string
 }
 
 const VideoPresenter:React.SFC<IProps> = (props) => {
@@ -19,7 +20,8 @@ const VideoPresenter:React.SFC<IProps> = (props) => {
             <h3>[ {props.title} ]</h3>
             <p>{props.description}</p>
             <div className="VideoSpan">
-                <span>공항 베델교회 장상진 목사</span>
+                <span>{props.publisedAt}</span>
+                <span>#장상진 목사</span>
             </div>
           </div>
       </div>

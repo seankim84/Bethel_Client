@@ -1,3 +1,4 @@
+import { Icon } from 'antd';
 import React from "react";
 import Helmet from 'react-helmet';
 import Header from "../../Header";
@@ -21,6 +22,16 @@ class Preach extends React.Component {
                 </div>
               </div>
               <div className="PreachBox">
+                <div className="PreachIntro">
+                    <div className="PreachTitle">공항 베델교회 설교</div>
+                    <div className="PreachLink">
+                    <button type="button" className="PreachBoxButton">
+                        <a href="https://www.youtube.com/channel/UC2FkjUXW5s9r5ty8qpFFRUA" target="blank" style={{textDecoration: "none", color:"black"}}>
+                        <Icon style={{ color: "red" }}type="youtube" /> Move to the Channel
+                        </a>
+                    </button>
+                    </div>
+                </div>
                 <div id="box" className="PreachBox1">
                   <Video />
                 </div>
