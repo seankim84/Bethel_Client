@@ -2,6 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import Footer from "../../Footer";
 import Header from '../../Header';
+import Slider from '../../Slider';
 import './Family.css';
 
 class Family extends React.Component {
@@ -32,6 +33,7 @@ class Family extends React.Component {
                         <div id="boxId" className="PictureBox1">5</div>
                         <div id="boxId" className="PictureBox1">6</div>
                     </div>
+                    <div><Slider /></div>
                 </div>
             </section>
                 <Footer />
