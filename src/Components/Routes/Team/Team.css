@@ -37,18 +37,73 @@
 }
 
 .PeopleBox {
-    padding: 4rem 20px;
+    padding: 6rem 20px;
     width: 100%;
-    height: 100vh;
+    height: 140vh;
     display: grid;
     grid-gap: 3rem;
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
 }
 
-#Box {
-    border: 1px solid black;
+
+.PeopleBox1 {
+  background: url('../../../images/jang.jpeg') center top /cover no-repeat;
+  background-size: 100%;
 }
+
+.PeopleBox2 {
+    background: url('../../../images/jang.jpeg') center top /cover no-repeat;
+    background-size: 100%;   
+}
+
+.PeopleBox3 {
+    background: url('../../../images/jang.jpeg') center top /cover no-repeat;
+    background-size: 100%;
+}
+
+.PeopleBox4 {
+  background: url('../../../images/jang.jpeg') center top /cover no-repeat;
+  background-size: 100%;
+}
+
+.PeopleBox5 {
+  background: url('../../../images/jang.jpeg') center top /cover no-repeat;
+  background-size: 100%;
+}
+
+.PeopleBox6 {
+    background: url('../../../images/jang.jpeg') center top /cover no-repeat;
+    background-size: 100%;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #7a7a7a;
+  display:grid;
+  align-content: center;
+}
+
+.overlay span {
+    display: grid;
+    justify-items:center;
+    font-size:1.2rem;
+    font-weight: bold;
+}
+
+.overlay p {
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.overlay:hover {
+  opacity: 0.9;
+  color: #ffffff;
+}
+
 
 .TeamColor {
     color: black;

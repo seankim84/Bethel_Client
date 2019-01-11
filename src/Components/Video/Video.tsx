@@ -3,7 +3,7 @@ import API_KEY from '../../Components/Api';
 import "./Video.css";
 import VideoPresenter from './VideoPresenter';
 
-const channelID = "UC2FkjUXW5s9r5ty8qpFFRUA";
+const channelID = "UCMurc2-6NyhD9z4y06i4m6g";
 const result = 6;
 const finalURL = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${channelID}&part=snippet,id&order=date&maxResults=${result}`;
 

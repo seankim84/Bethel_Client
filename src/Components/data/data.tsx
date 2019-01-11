@@ -2,7 +2,6 @@ import family0 from './dataImages/family0.jpeg';
 import family1 from  './dataImages/family1.jpeg';
 import family2 from './dataImages/family2.jpeg';
 import family3 from './dataImages/family3.jpeg';
-import family4 from './dataImages/family4.jpeg';
 import family5 from './dataImages/family5.jpeg';
 import family6 from './dataImages/family6.jpeg';
 import family7 from './dataImages/family7.jpeg';
@@ -14,23 +13,22 @@ import family11 from './dataImages/family11.jpeg';
 import family12 from './dataImages/family12.jpeg';
 
 
-
 const data = {
   properties: [
     {
-      description: "",
+      description: "상우형",
       index: 0,
       name: "family0",
       picture: family0
     },
     {
-      description: "",
+      description: "sadfsadfsdf",
       index: 1,
       name: "family1",
       picture: family1
     },
     {
-      description: "",
+      description: "sadfsdfds",
       index: 2,
       name: "family2",
       picture: family2
@@ -40,12 +38,6 @@ const data = {
       index: 3,
       name: "family3",
       picture: family3
-    },
-    {
-      description: "",
-      index: 4,
-      name: "family4",
-      picture: family4
     },
     {
       description: "",

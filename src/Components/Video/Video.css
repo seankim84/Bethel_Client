@@ -7,6 +7,7 @@
   justify-items: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
   0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.3s ease;
 }
 
 .VideoFrame {
@@ -60,26 +61,26 @@
 
 /* Video */ 
 .ItemBox0:hover {
-  transition: 0.3s ease;
-  margin: 0 10px;
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
 }
 .ItemBox1:hover {
-  transition: 0.3s ease;
-  margin: 0 10px;
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
 }
 .ItemBox2:hover {
-  transition: 0.3s ease;
-  margin: 0 10px;
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
 }
 .ItemBox3:hover {
-  transition: 0.3s ease;
-  margin: 0 10px;
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
 }
 .ItemBox4:hover {
-  transition: 0.3s ease;
-  margin: 0 10px;
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
 }
 .ItemBox5:hover {
-  transition: 0.3s ease;
-  margin: 0 10px;
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
 }

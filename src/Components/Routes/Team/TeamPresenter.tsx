@@ -2,6 +2,7 @@ import React from "react";
 import Helmet from 'react-helmet';
 import Footer from '../../Footer';
 import Header from '../../Header';
+
 import './Team.css';
 
 class Team extends React.Component {
@@ -19,12 +20,42 @@ class Team extends React.Component {
             </div>
           </div>
           <div className="PeopleBox">
-            <div id="Box" className="PeopleBox1">Paul Han</div>
-            <div id="Box" className="PeopleBox2">Jang San Gin</div>
-            <div id="Box" className="PeopleBox3">Lee ji Guen</div>
-            <div id="Box" className="PeopleBox4">Kim Hyeon Gyu</div>
-            <div id="Box" className="PeopleBox5">Lee Seong Guen</div>
-            <div id="Box" className="PeopleBox6">Jeong Han Bin</div>
+            <div id="Box" className="PeopleBox1">
+                <div className="overlay">
+                  <span>#장상진 목사</span>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                </div>
+            </div>
+            <div id="Box" className="PeopleBox2">
+                <div className="overlay">
+                  <span>#장상진 목사</span>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                </div>
+            </div>
+            <div id="Box" className="PeopleBox3">
+              <div className="overlay">
+                <span>#장상진 목사</span>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+              </div>
+            </div>
+            <div id="Box" className="PeopleBox4">
+                <div className="overlay">
+                  <span>#장상진 목사</span>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                </div>
+            </div>
+            <div id="Box" className="PeopleBox5">
+                <div className="overlay">
+                  <span>#장상진 목사</span>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                </div>
+            </div>
+            <div id="Box" className="PeopleBox6">
+                <div className="overlay">
+                  <span>#장상진 목사</span>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                </div>
+            </div>
           </div>
         </div>
           

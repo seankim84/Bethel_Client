@@ -23,7 +23,7 @@ class Preach extends React.Component {
               </div>
               <div className="PreachBox">
                 <div className="PreachIntro">
-                    <div className="PreachTitle">공항 베델교회 설교</div>
+                    <div className="PreachTitle">베델공동체 설교</div>
                     <div className="PreachLink">
                     <button type="button" className="PreachBoxButton">
                         <a href="https://www.youtube.com/channel/UC2FkjUXW5s9r5ty8qpFFRUA" target="blank" style={{textDecoration: "none", color:"black"}}>

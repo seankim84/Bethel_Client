@@ -3,19 +3,22 @@ import Coverflow from 'react-coverflow';
 import data from '../data';
 
 export default class SliderContainer extends React.Component {
+
      render(){
         return (
             <div>  
                  <Coverflow
                     media={{
-                        height: "80vh",
-                        width: "100vw",
+                        background: "#e1e1e1",
+                        height: "75vh",
+                        width: "80vw",
                     }}
-                    displayQuantityOfSide={2}
+                    displayQuantityOfSide={1}
                     navigation={true}
-                    enableHeading={false}
+                    enableHeading={true}
+                    
                     >
-                    {data.properties.map(proper => <img onClick={""} key={proper.index} style={{width:"20vw", height:"auto"}} src={proper.picture} /> )}
+                    {data.properties.map(proper => <img key={proper.index} style={{width:"60vw%", height:"40vh"}} src={proper.picture} alt={proper.description} /> )}
                 </Coverflow>
             </div>
         )
