@@ -1,0 +1,143 @@
+.CarouselContainer {
+   
+}
+
+
+.ant-carousel .slick-slide {
+  text-align: center;
+  width:100%;
+  line-height: 65vh;
+  overflow: hidden;
+}
+
+.properBox {
+    position: relative; 
+    left: 10vw;
+    width:100%;
+    height:100%;
+}
+
+.proper0 {
+    width: 80%;
+    height:100%;
+    background: url('../data/dataImages/family0.jpeg') center/cover no-repeat;
+    background-size: 100%;
+}
+
+.proper1 {
+     width: 80%;
+     height:100%;
+     background: url('../data/dataImages/family1.jpeg') top/cover no-repeat;
+     background-size: 100%;
+}
+
+.proper2 {
+  width: 80%;
+  height: 100%;
+  background: url('../data/dataImages/family2.jpeg') center top/cover no-repeat;
+  background-size: 100%;
+}
+
+.proper3 {
+  width: 80%;
+  height: 100%;
+  background: url('../data/dataImages/family3.jpeg') center/cover no-repeat;
+  background-size: 50%;
+}
+
+.proper4 {
+  width: 80%;
+  height: 90%;
+  background: url('../data/dataImages/family4.jpeg') center/cover no-repeat;
+  background-size: 100%;
+}
+
+
+.proper5 {
+  width: 80%;
+  height: 100%;
+  background: url('../data/dataImages/family5.jpeg') center/cover no-repeat;
+  background-size: 100% ;
+}
+
+.proper6 {
+  width: 80%;
+  height: 100%;
+  background: url('../data/dataImages/family6.jpeg') center/cover no-repeat;
+  background-size: 100%;
+}
+
+.proper7 {
+  width: 80%;
+  height: 100%;
+  background: url('../data/dataImages/family7.jpeg') center/cover no-repeat;
+  background-size: 100%;
+}
+
+.proper8 {
+  width: 80%;
+  height: 100%;
+  background: url('../data/dataImages/family8.jpeg') center/cover no-repeat;
+  background-size: 100%;
+}
+
+.proper9 {
+  width: 80%;
+  height: 100%;
+  background: url('../data/dataImages/family9.jpeg') center/cover no-repeat;
+  background-size: 100%;
+}
+
+.proper10 {
+  width: 80%;
+  height: 100%;
+  background: url('../data/dataImages/family10.jpeg') center/cover no-repeat;
+  background-size: 100%;
+}
+
+.proper11 {
+  width: 80%;
+  height: 100%;
+  background: url('../data/dataImages/family11.jpeg') center/cover no-repeat;
+  background-size: 100%;
+}
+
+.properButton {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2.5rem;
+}
+
+.properLeft {
+    width: 10vw;
+    padding-left:1rem;
+    cursor: pointer;
+    display: grid;
+    justify-items: center;
+}
+
+.properRight {
+     width: 10vw;
+     padding-right:1rem;
+     cursor: pointer;
+     transition: 1s ease;
+     display: grid;
+     justify-items: center;
+}
+
+.properButton .properLeft:hover {
+  padding-right: 1rem;
+  color: #3d3b41;
+  transition: 1s ease;
+}
+
+.properButton .properRight:hover {
+  padding-left: 1rem;
+  color: #3d3b41;
+  transition: 1s ease-out;
+}

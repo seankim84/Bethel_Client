@@ -1,26 +1,54 @@
-import React from 'react';
-import Coverflow from 'react-coverflow';
-import data from '../data';
+import React, { Component } from 'react';
+import { Carousel, Icon } from 'antd';
+import  data from '../data';
+import SliderPresenter from './SliderPresenter';
+import './Slider.css';
 
-export default class SliderContainer extends React.Component {
 
-     render(){
-        return (
-            <div>  
-                 <Coverflow
-                    media={{
-                        background: "#e1e1e1",
-                        height: "75vh",
-                        width: "80vw",
-                    }}
-                    displayQuantityOfSide={1}
-                    navigation={true}
-                    enableHeading={true}
-                    
-                    >
-                    {data.properties.map(proper => <img key={proper.index} style={{width:"60vw%", height:"40vh"}} src={proper.picture} alt={proper.description} /> )}
-                </Coverflow>
+class SliderContainer extends Component {
+  constructor(props) {
+    super(props)
+    this.next = this.next.bind(this)
+    this.previous = this.previous.bind(this)
+  }
+  next() {
+    this.carousel.next();
+  }
+  previous() {
+    this.carousel.prev();
+  }
+  render() {
+
+    const props = {
+      autoplay: false,   
+      dots: false,
+      infinite: true, 
+      slidesToScroll: 1,
+      slidesToShow: 1,
+      speed: 500,
+    };
+    return (
+      <div className="CarouselContainer">
+        <Carousel ref={node => this.carousel = node } {...props}>
+          {data.properties.map(proper => (
+            <div className='properBox'>
+              <div className={`proper${proper.index}`}>
+                {proper.description}
+              </div>
             </div>
-        )
-    }
+          ))}
+        </Carousel>
+        <div className="properButton">
+          <div onClick={this.previous}>
+            <Icon className="properLeft" type="left" />
+          </div>
+          <div onClick={this.next}>
+            <Icon className="properRight" type="right" />
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
+
+export default SliderContainer;

@@ -18,6 +18,7 @@
     "react-dom": "^16.6.3",
     "react-facebook-login": "^4.1.1",
     "react-helmet": "^5.2.0",
+    "react-image-gallery": "^0.8.12",
     "react-modal": "^3.8.1",
     "react-router-dom": "^4.3.1",
     "react-scripts-ts": "3.1.0",
@@ -38,8 +39,8 @@
     "eject": "react-scripts-ts eject",
     "precodegen": "apollo schema:download --endpoint=http://localhost:4000/graphql",
     "codegen": "apollo codegen:generate src/types/api.d.ts --queries='src/**/*.queries.ts' --addTypename --localSchemaFile schema.json --target typescript --outputFlat",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "aws s3 sync ./build s3://betheldb --profile=bethel",
+    "invalidate": "aws cloudfront create-invalidation --profile=bethel --distribution-id E28WYJUFAC84F --paths / /index.html /error.html /service-worker.js /manifest.json /favicon.ico"
   },
   "devDependencies": {
     "@types/antd": "^1.0.0",
@@ -57,6 +58,5 @@
     "@types/styled-components": "^4.1.3",
     "gh-pages": "^2.0.1",
     "typescript": "^3.2.1"
-  },
-  "homepage": "https://seankim84.github.io/Bethel_Client/"
+  }
 }

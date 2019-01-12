@@ -21,6 +21,9 @@ class Family extends React.Component {
                     </div>
                 </div>
                 <div className="FamilyMain">
+                    <div className="ProperExplain">
+                        <h1>어제보다 오늘 더 사랑하는 베델 가족을 소개합니다</h1>
+                        </div>
                     <div><Slider /></div>
                 </div>
             </section>

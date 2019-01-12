@@ -1,35 +1,20 @@
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import React from 'react';
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import EditAccount from '../Routes/EditAccount';
-import EmailLogin from '../Routes/EmailLogin';
+// import EmailLogin from '../Routes/EmailLogin';
 import Family from '../Routes/Family'
 import Home from '../Routes/Home';
 import Intro from '../Routes/Intro';
-import OutHome from '../Routes/OutHome';
 import Preach from '../Routes/Preach';
-import SocialLogin from '../Routes/SocialLogin';
+// import SocialLogin from '../Routes/SocialLogin';
 import Team from '../Routes/Team';
 
-export interface IProps {
-  isLoggedIn: boolean;
-};
-
-
-const AppPresenter: React.SFC<IProps> = ({ isLoggedIn }) => (
+const AppPresenter: React.SFC = () => (
   <BrowserRouter>
-    {isLoggedIn ? <LoggedInRoutes/> : <LoggedOutRoutes />}
+    <LoggedInRoutes/> 
   </BrowserRouter>
 );
-
-const LoggedOutRoutes: React.SFC = () => (
-  <Switch>
-    <Route path={"/"} exact={true} component={OutHome} />
-    <Route path={"/email-login"} exact={true} component={EmailLogin} />
-    <Route path={"/social-login"} exact={true} component={SocialLogin} />
-    <Redirect from={"*"} to={"/"} exact={true} />
-  </Switch>
-); // Redirect는 무조건 맨 끝에 붙인다
 
 const LoggedInRoutes: React.SFC = () => (
   <Switch>
@@ -41,11 +26,9 @@ const LoggedInRoutes: React.SFC = () => (
     <Route path={"/preach"} exact={true} component={Preach} />
     <Route path={"/:isParams"} exact={true} component={Preach} />
     <Redirect from={"*"} to={"/"} />
+    <Redirect from={"*"} to={"/"} exact={true} />
   </Switch>
-);
+); // Redirect는 무조건 맨 끝에 붙인다
 
-AppPresenter.propTypes = {
-    isLoggedIn: PropTypes.bool.isRequired
-};
 
 export  default AppPresenter;
