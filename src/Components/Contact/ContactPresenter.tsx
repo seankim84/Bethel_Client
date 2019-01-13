@@ -7,7 +7,7 @@ const ContactPresenter: React.SFC = ({}) => (
   <section className="Contact">
     <div className="ContactTitle">
         <h1>Contact Us</h1>
-        <p>S50-1 Sky Garden 2, Phạm Văn Nghị, P.Tân Phong, Q.7, Tp.HCM, Vitenam</p>
+        <p style={{color: "#000000"}}>S50-1 Sky Garden 2, Phạm Văn Nghị, P.Tân Phong, Q.7, Tp.HCM, Vitenam</p>
     </div>
     <div className="Map">
       <iframe 

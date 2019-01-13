@@ -11,7 +11,7 @@ const paneNodes = Array.apply(null, Array(numberOfSlide)).map((_:any, i:any) => 
     return (
       <div key={i}>
         <div id="sliderBox" style={{ width: "100%", height: "100vh" }} className={`Slider${i}`}>
-          <div className="introTitle">안녕하세요 베델입니다</div>
+          <div className="introTitle">안녕하세요 베델교회입니다</div>
         </div>
       </div>
     ) 
@@ -24,7 +24,7 @@ const paneNodes = Array.apply(null, Array(numberOfSlide)).map((_:any, i:any) => 
   } else if (i === 2) {
     return <div key={i}>
         <div id="sliderBox" style={{ width: "100%", height: "100vh" }} className={`Slider${i}`}>
-          <div className="introTitle">세상끝날 날까지 멈추지 않습니다</div>
+          <div className="introTitle">세상이 끝날 때까지 멈추지 않습니다</div>
         </div>
       </div>;
   } else if (i === 3) {

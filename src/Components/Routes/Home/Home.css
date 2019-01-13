@@ -1,4 +1,10 @@
 .Whole {
     width:100%;
-    height:100%;    
+    height:100%;
+    color: white;  
+    text-decoration: none;  
+}
+
+#homeHeader Link{
+    color: #ffffff;
 }

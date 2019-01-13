@@ -8,7 +8,7 @@ class TabSlider extends React.Component {
     public render() {
         return <div>
             <Tabs defaultActiveKey="1" tabPosition={"bottom"} style={{}}>
-              <TabPane tab="2005.5" key="1">
+              <TabPane className="Taborder" tab="2005.5" key="1">
                 <div id="Tab" className="TabBox1">
                   <div className="TabIntro">
                     <h2>2005.5</h2>
@@ -23,7 +23,7 @@ class TabSlider extends React.Component {
                   </div>
                 </div>
               </TabPane>
-              <TabPane tab="2008.8" key="2">
+              <TabPane className="Taborder" tab="2008.8" key="2">
                 <div id="Tab" className="TabBox2">
                   <div className="TabIntro">
                     <h2>2008.8</h2>
@@ -38,7 +38,7 @@ class TabSlider extends React.Component {
                   </div>
                 </div>
               </TabPane>
-              <TabPane tab="2011.3" key="3">
+              <TabPane className="Taborder" tab="2011.3" key="3">
                 <div id="Tab" className="TabBox3">
                   <div className="TabIntro">
                     <h2>2011.3</h2>
@@ -53,7 +53,7 @@ class TabSlider extends React.Component {
                   </div>
                 </div>
               </TabPane>
-              <TabPane tab="2012.10" key="4">
+              <TabPane className="Taborder" tab="2012.10" key="4">
                 <div id="Tab" className="TabBox4">
                   <div className="TabIntro">
                     <h2>2012.10</h2>

@@ -2,6 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import Footer from "../../Footer";
 import Header from '../../Header';
+import Kakao from '../../Kakao';
 import Slider from '../../Slider';
 import './Family.css';
 
@@ -23,11 +24,13 @@ class Family extends React.Component {
                 <div className="FamilyMain">
                     <div className="ProperExplain">
                         <h1>어제보다 오늘 더 사랑하는 베델 가족을 소개합니다</h1>
-                        </div>
+                    </div>
                     <div><Slider /></div>
+                    <div><Kakao  /></div>
+                    <Footer />  
                 </div>
             </section>
-                <Footer />
+                
           </div>
         );
     }

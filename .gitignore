@@ -22,5 +22,5 @@ yarn-error.log*
 
 # API
 
-/src/Components/Api/
-/src/components/Api/
+/src/Components/Api
+/src/components/Api

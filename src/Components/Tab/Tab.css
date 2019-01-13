@@ -76,3 +76,50 @@
   sans-serif;
 }
 
+@media screen and (max-width:776px) {
+  .TabIntro {
+      padding: 0;
+      display: grid;
+      justify-items: center;
+      justify-content: center;
+  }
+
+  .TabIntro h2 {
+    font-size: 1.8rem;
+    color: #f9ebdd;
+  }
+  .TabIntro span {
+    font-size: 1.4rem;
+  }
+
+  .TabBox .TabIntro p {
+    padding: 1rem;
+    display: block;
+  }
+
+  .ant-tabs-nav-container {
+    width:100%;
+    height: 100%;
+    justify-items: center; 
+    display:grid;
+  }
+
+  .ant-tabs-tab-prev-icon svg{
+    width:25px;
+    height:auto;
+    color:#ffffff;
+  }
+
+  .ant-tabs-tab-next-icon svg{
+    width:25px;
+    height:auto;
+    color:#ffffff;
+  }
+
+  .ant-tabs-nav-wrap {
+    display: grid;
+    justify-items: center;
+    justify-content: center ;
+  }
+}
+

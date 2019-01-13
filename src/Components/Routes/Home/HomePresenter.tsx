@@ -11,7 +11,7 @@ class HomePresenter extends React.Component {
         return (
             <div>
                 <div className="Whole">
-                    <Header classname="" id={null}/>
+                    <Header classname={"Whole"} id={"homeHeader"}/>
                     <Intro />
                     <Info />
                     <Mission />

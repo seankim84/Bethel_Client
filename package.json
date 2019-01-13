@@ -40,7 +40,8 @@
     "precodegen": "apollo schema:download --endpoint=http://localhost:4000/graphql",
     "codegen": "apollo codegen:generate src/types/api.d.ts --queries='src/**/*.queries.ts' --addTypename --localSchemaFile schema.json --target typescript --outputFlat",
     "deploy": "aws s3 sync ./build s3://betheldb --profile=bethel",
-    "invalidate": "aws cloudfront create-invalidation --profile=bethel --distribution-id E28WYJUFAC84F --paths / /index.html /error.html /service-worker.js /manifest.json /favicon.ico"
+    "invalidate": "aws cloudfront create-invalidation --profile=bethel --distribution-id E28WYJUFAC84F --paths / /index.html /error.html /service-worker.js /manifest.json /favicon.ico",
+    "prebuild": "rm -rf build"
   },
   "devDependencies": {
     "@types/antd": "^1.0.0",

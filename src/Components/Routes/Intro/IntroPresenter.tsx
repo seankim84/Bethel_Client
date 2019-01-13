@@ -17,7 +17,7 @@ class Info extends React.Component {
             <div>
             <section className="Intro">
                 <Helmet><title>Bethel | Intro</title></Helmet>
-                <Header classname="IntroColor" id="" />
+                <Header classname="" id="" />
                     <div className="Introduction">
                       <div className="IntroHeader">
                         <div className="IntroExplain">
@@ -39,7 +39,7 @@ class Info extends React.Component {
                                 <span>Bethel Church</span>
                             </div>
                         </div>
-                        <div id="boxid" className="Box2">
+                      <div id="boxid" className="Box2">
                             <div className="BoxBackground">
                                 <a className="svgTarget" target="blank" href="https://www.google.com/maps/place/Bethel+Church/@10.7307967,106.7065117,21z/data=!4m8!1m2!2m1!1zUzUwLTEgU2t5IEdhcmRlbiAyLCBQaOG6oW0gVsSDbiBOZ2jhu4ssIFAuVMOibiBQaG9uZywgUS43LCBUcC5IQ00sIFZpdGVuYW0!3m4!1s0x31752fef1f5df9c7:0x70eed531a007e9a2!8m2!3d10.7308634!4d106.7066981"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" clip-rule="evenodd"><path d="M24 24h-24v-2h1v-7c-.014-.563-.427-.985-1-1v-5h2v2h2v-2h2v3h1v-6h2v2h2v-8l5 2-4 2v2h1v2h2v-2h2v6h1v-3h2v2h2v-2h2v5c-.523 0-.982.392-1 .999v7.001h1v2zm-11-1v-4c0-.552-.448-1-1-1s-1 .448-1 1v4h2zm2-13h-6v4h-5v-1h-1.764c.509.587.746 1.218.764 1.975v7.025h6v-3c0-1.656 1.344-3 3-3 1.655 0 3 1.345 3 3v3h6v-7.026c.019-.748.251-1.389.764-1.974h-1.764v1h-5v-4zm-8 9h-2v-2c0-.552.448-1 1-1s1 .448 1 1v2zm12 0h-2v-2c0-.552.448-1 1-1s1 .448 1 1v2zm-6-5h-2v-2c0-.552.448-1 1-1s1 .448 1 1v2z"/></svg></a>
                                 </div>

@@ -1,0 +1,69 @@
+.Kakao {
+    margin:0;
+    width:100vw;
+    height:100vh;
+    padding: 3rem 2rem;
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    justify-items: center;
+}
+
+.KakaoHeader {
+    font-size: 1.2rem;
+}
+
+
+.KakaoIntro {
+    width:100%;
+    height:100%;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    justify-items: flex-start;
+}
+
+.KakaoTitle {
+    border-bottom: 1px solid grey;
+}
+
+.KakaoTitle h2 {
+    font-size: 1.5rem;
+}
+
+.KakaoTitle p {
+  font-size: 1.2rem;
+}
+
+.KakaoExplain {
+    width:100%;
+    height:100%;
+    padding-top: 2rem;
+}
+
+.KakaoExplain h2 {
+    font-size: 1.5rem;
+}
+
+.KakaoExplain p {
+    font-size: 1.2rem;
+}
+
+.KakaoBox {
+    padding-top: 2rem;
+    width:100%;
+    height:85%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.KakaoInner {
+    display: grid;
+    justify-items: center;
+    align-content: flex-start;
+    text-align: center;
+}
+
+.KakaoInner h3 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem; 
+}

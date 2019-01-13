@@ -119,6 +119,29 @@
     padding-top: 3rem;
 }
 
-.MinisterBox {
-    
+/* min-width*/
+
+@media screen and (max-width:776px) {
+    .introColor .ShadowTitle{
+        color: #000000;
+    }
+
+  .IntroBox  {
+    display: 'block';
+  }
+
+  .IntroBox p {
+      text-align: center;
+      font-size: 1.1rem;
+      padding: 0 15px;
+  }
+
+  .Boxs {
+      display: block;
+  }
+
+  .BoxBackground {
+      display: none;
+  }
 }
+

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Carousel, Icon } from 'antd';
 import  data from '../data';
-import SliderPresenter from './SliderPresenter';
 import './Slider.css';
 
 
@@ -31,7 +30,7 @@ class SliderContainer extends Component {
       <div className="CarouselContainer">
         <Carousel ref={node => this.carousel = node } {...props}>
           {data.properties.map(proper => (
-            <div className='properBox'>
+            <div key={proper.index} className='properBox'>
               <div className={`proper${proper.index}`}>
                 {proper.description}
               </div>
