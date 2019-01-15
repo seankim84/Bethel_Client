@@ -51,9 +51,12 @@ header .HeaderTop {
 }
 
 @media screen and (min-width:776px) {
-  .HeaderTop .ShadowTop  {
-    color:  #000000;
+    .ShadowTop  {
+        display: none;
   }
+    #ShadowTitle {
+        display:none;
+    }
 }
 
 .ShadowTop {
@@ -68,7 +71,7 @@ header .HeaderTop {
 }
 
 #ShadowTitle {
-    color: #ffffff;
+    color: #292c33;
     width: 100%;
     font-size: 1.5rem;
     display: grid;
@@ -86,7 +89,7 @@ header .HeaderTop {
 
 .dropDown {
     font-size: 2rem;
-    color: #ffffff;
+    color: #292c33;
 }
 
 

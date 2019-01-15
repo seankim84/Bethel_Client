@@ -112,7 +112,7 @@
 }
 
 .IntroColor {
-    color: black;
+    color:black;
 }
 
 .TabBox {
@@ -120,6 +120,12 @@
 }
 
 /* min-width*/
+
+@media screen and (max-width:776px) {
+  .IntroColor {
+      color: #000000;
+  } 
+}
 
 @media screen and (max-width:776px) {
     .introColor .ShadowTitle{

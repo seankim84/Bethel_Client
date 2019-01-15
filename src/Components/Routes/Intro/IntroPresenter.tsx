@@ -17,7 +17,9 @@ class Info extends React.Component {
             <div>
             <section className="Intro">
                 <Helmet><title>Bethel | Intro</title></Helmet>
-                <Header classname="" id="" />
+                <div style={{color: "black"}}>
+                <Header classname="IntroColor" id="" />
+                </div>
                     <div className="Introduction">
                       <div className="IntroHeader">
                         <div className="IntroExplain">

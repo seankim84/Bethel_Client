@@ -26,7 +26,7 @@ class Preach extends React.Component {
                     <div className="PreachTitle">베델공동체 설교</div>
                     <div className="PreachLink">
                     <button type="button" className="PreachBoxButton">
-                        <a href="https://www.youtube.com/channel/UC2FkjUXW5s9r5ty8qpFFRUA" target="blank" style={{textDecoration: "none", color:"black"}}>
+                    <a href="https://www.youtube.com/channel/UCMurc2-6NyhD9z4y06i4m6g" target="blank" style={{textDecoration: "none", color:"black"}}>
                         <Icon style={{ color: "red" }}type="youtube" /> Move to the Channel
                         </a>
                     </button>

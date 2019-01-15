@@ -1,11 +1,10 @@
-import { Icon } from 'antd';
 import React from 'react';
 import './Modal.css';
 
 interface IProps {
     handleClose:any,
     showleft?:boolean,
-    showright?:boolean,
+    showRight?:boolean,
     children:any
 };
 
@@ -13,8 +12,8 @@ export const ModalLeft: React.SFC<IProps> = props => {
     const showHideClassName = props.showleft ? "modal display-block" : "modal display-none";
     return (
         <div className={showHideClassName}>
-            <section className="modal-main">
-            <button onClick={props.handleClose}><Icon style={{fontSize:"2.2rem"}} type="close" /></button>
+            <section id="modalMain1" className="modal-main">
+                <button onClick={props.handleClose}>X</button>
               {props.children}
             </section>
         </div>
@@ -22,11 +21,11 @@ export const ModalLeft: React.SFC<IProps> = props => {
 };
 
 export const ModalRight: React.SFC<IProps> = props => {
-    const showHideClassName = props.showright ? "modal display-block" : "modal display-none";
+    const showHideClassName = props.showRight ? "modal display-block" : "modal display-none";
     return (
         <div className={showHideClassName}>
-            <section className="modal-main">
-                <button  onClick={props.handleClose}><Icon style={{ color: "#ffffff", fontSize: "2.2rem" }} type="close" /></button>
+            <section id="modalMain2" className="modal-main">
+                <button onClick={props.handleClose}>X</button>
                 {props.children}
             </section>
         </div>

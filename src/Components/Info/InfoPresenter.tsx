@@ -23,66 +23,72 @@ class Info extends React.Component<IState>{
   }
 
   public hideModal = () =>  {
-    this.setState({ showright: false, showleft: false })
+    this.setState({ 
+      showleft: false, 
+      showright: false 
+    })
   }
 
   public render(){
-    return <section className="Info">
-        <div className="InfoTitle">
-          <h1>Philociphy</h1>
-          <p>
-            베델은 이런 가치를 지향합니다. 여러분들과 이런여정을 떠나고
-            싶습니다.
-          </p>
-        </div>
-        <div className="WholeBox">
-          <div className="BoxLeft" onClick={this.showModalLeft}>
-            <p>VISION</p>
-            <Icon className="arrow" type="arrow-left" />
+    return (
+    <div className="InfoSection">
+      <section className="Info">
+          <div className="InfoTitle">
+            <h1>Faith</h1>
+            <p>
+              베델은 이러한 비전과 가치를 가지고 있습니다
+            </p>
           </div>
+          <div className="WholeBox">
+            <div className="BoxLeft" onClick={this.showModalLeft}>
+              <p>VISION</p>
+              <Icon className="arrow" type="arrow-left" />
+            </div>
 
-          <div className="BoxRight" onClick={this.showModalRight}>
-            <p>VALUE</p>
-            <Icon className="arrow" type="arrow-right" />
+            <div className="BoxRight" onClick={this.showModalRight}>
+              <p>VALUE</p>
+              <Icon className="arrow" type="arrow-right" />
+            </div>
+            <div onClick={this.hideModal}>
+              <ModalLeft showleft={this.state.showleft} handleClose={this.hideModal}>
+                <div className="modalboxLeft">
+                  <h1>Vision</h1>
+                  <span>
+                    나의 달려갈 길과 주 예수께 받은 사명 곧 하나님의 은혜의
+                    복음 증거하는 일을 마치려 함에는 나의 생명을 조금도 귀한
+                    것으로 여기지 아니하노라 (행20:24)
+                  </span>
+                  <p style={{ paddingTop: "1.5rem", fontSize: "1.3rem" }}>
+                    베델교회는 세계 선교와 베트남 복음 전도를 위해 설립되었습니다
+                    <br />
+                    그 사역을 위해 지속적으로 베트남 지역에 수많은 교회를 세워
+                    <br />
+                    하나님의 복음이 확장되는데 필요한 전진기지가 될 것입니다
+                  </p>
+                </div>
+              </ModalLeft>
+            </div>
+            <div onClick={this.hideModal}>
+              <ModalRight showRight={this.state.showright} handleClose={this.hideModal}>
+                <div className="modalboxRight">
+                  <h1>Value</h1>
+                  <span>
+                    내가 너희에게 이르노니 이와 같이 죄인 한 사람이 회개하면
+                    하나님의 사자들 앞에 기쁨이 되느니라 (눅15:10)
+                  </span>
+                  <p style={{ paddingTop: "1.5rem", fontSize: "1.3rem" }}>
+                    베델교회가 중요하게 여기는 것은 잃어버린 영혼을 찾는
+                    일입니다<br /> 이것은 베델 교회 존재의 목적이며 베델 교회가
+                    가장 소중하게 여기는 가치입니다<br /> 여러분과 함께 잃어버린
+                    영혼들을 찾아 주님의 제자로 세워나가길 원합니다
+                  </p>
+                </div>
+              </ModalRight>
+            </div>
           </div>
-          <div onClick={this.hideModal}>
-            <ModalLeft showleft={this.state.showleft} handleClose={this.hideModal}>
-              <div className="modalboxLeft">
-                <h1>Vision</h1>
-                <span>
-                  나의 달려갈 길과 주 예수께 받은 사명 곧 하나님의 은혜의 복음 증거하는 일을 마치려 함에는 나의 생명을 조금도 귀한 것으로 여기지 아니하노라 (행20:24)
-                </span>
-                <p style={{paddingTop:"1.5rem", fontSize:"1.3rem"}}>
-                  베델교회는 세계 선교와 베트남 복음 전도를 위해 설립되었습니다<br />
-                  그 사역을 위해 지속적으로 베트남 지역에 수많은 교회를 세워<br />
-                  하나님의 복음이 확장되는데 필요한 전진기지가 될 것입니다
-                </p>
-              </div>
-            </ModalLeft>
-          </div>
-          <div>
-            <ModalRight showright={this.state.showright} handleClose={this.hideModal}>
-              <div className="modalboxRight">
-                <h1>Value</h1>
-                <span>
-                  카카오벤처스는 우리에게 필요한 미래를 앞당기는 혁신에
-                  함께하는 든든한 동반자입니다.
-                </span>
-                <p>
-                  창업은 세상의 문제를 해결하는 과정이며, 궁극적으로 삶의
-                  질을 높이는 혁신을 가능케 합니다. 결국 창업을 통해
-                  우리에게 다가올 긍정적인 미래를 앞당길 수 있습니다. 따라서
-                  창업가는 문제 해결을 통해 세상을 바꾸는 개척자라고
-                  믿습니다. 우리는 창업가를 진심으로 존경하고, 역량 있는
-                  인재들이 창업하기에 좋은 생태계를 조성하는 데 최선을
-                  다하고 있습니다. 카카오벤처스는 창업가의 어렵고 험난한
-                  여정에 함께하는 든든한 동반자가 되겠습니다.
-                </p>
-              </div>
-            </ModalRight>
-          </div>
-        </div>
-      </section>;
+        </section>
+      </div>
+      );
   }
 }
 

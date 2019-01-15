@@ -24,3 +24,6 @@ yarn-error.log*
 
 /src/Components/Api
 /src/components/Api
+
+# build
+dist

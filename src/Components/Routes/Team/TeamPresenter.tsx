@@ -20,37 +20,37 @@ class Team extends React.Component {
             </div>
           </div>
           <div className="PeopleBox">
-            <div id="Box" className="PeopleBox1">
+            <div id="HumanBox" className="PeopleBox1">
                 <div className="overlay">
                   <span>#장상진 목사</span>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                 </div>
             </div>
-            <div id="Box" className="PeopleBox2">
+            <div id="HumanBox" className="PeopleBox2">
                 <div className="overlay">
                   <span>#장상진 목사</span>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                 </div>
             </div>
-            <div id="Box" className="PeopleBox3">
+            <div id="HumanBox" className="PeopleBox3">
               <div className="overlay">
                 <span>#장상진 목사</span>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
               </div>
             </div>
-            <div id="Box" className="PeopleBox4">
+            <div id="HumanBox" className="PeopleBox4">
                 <div className="overlay">
                   <span>#장상진 목사</span>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                 </div>
             </div>
-            <div id="Box" className="PeopleBox5">
+            <div id="HumanBox" className="PeopleBox5">
                 <div className="overlay">
                   <span>#장상진 목사</span>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                 </div>
             </div>
-            <div id="Box" className="PeopleBox6">
+            <div id="HumanBox" className="PeopleBox6">
                 <div className="overlay">
                   <span>#장상진 목사</span>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
@@ -59,9 +59,9 @@ class Team extends React.Component {
           </div>
         </div>
           
-
+          
       </section>
-      <Footer />
+        <div><Footer /></div> 
       </div>
       );
   }

@@ -38,11 +38,10 @@
 }
 
 @media screen and (max-width: 776px) {
-  .ContactTitle h1{
-    font-size: 1.5rem;
+  .ContactTitle {
+      display:none;
   }
-
-  .ContactTitle p {
-      text-align: center;
+  .Map {
+      padding-top:1.2rem;
   }
 }
