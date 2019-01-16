@@ -102,6 +102,10 @@
   background-size: 100%;
 }
 
+.properDescription {
+  opacity: 0;
+}
+
 .properButton {
     top: 0;
     width: 100%;
@@ -140,4 +144,21 @@
   padding-left: 1rem;
   color: #3d3b41;
   transition: 1s ease-out;
+}
+
+@media screen and (max-width: 776px) {
+  .properDescription {
+    opacity: 0;
+  }
+
+  .properLeft svg{
+    height:20px;
+    width:auto;
+
+  }
+  .properRight svg{
+    height:20px;
+    width:auto;
+  }
+
 }

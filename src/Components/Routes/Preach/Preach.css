@@ -93,3 +93,26 @@
 .preachColor {
   color: black;
 }
+
+@media screen and (max-width:776px) {
+  .PreachIntro {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+  }
+
+  .PreachTitle {
+    padding: 0;
+  }
+
+  .PreachBoxButton {
+    width:80%;
+    height:auto;
+    font-size:12px;
+  }
+
+  .PreachBox1 {
+    display: block;
+  }
+
+}

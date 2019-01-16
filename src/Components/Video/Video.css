@@ -84,3 +84,21 @@
   -webkit-transform: scale(1.08);
   transform: scale(1.08);
 }
+
+
+@media screen and (max-width:776px) {
+  #VideoPresenterBox {
+    margin-bottom: 1.5rem ;
+  }
+
+  .ViedoExplain {
+    display:none;
+  }
+
+
+  .VideoFrame {
+    width: 100%;
+    height: auto;
+  }
+
+}

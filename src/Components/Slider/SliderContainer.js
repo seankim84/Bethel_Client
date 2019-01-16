@@ -32,7 +32,7 @@ class SliderContainer extends Component {
           {data.properties.map(proper => (
             <div key={proper.index} className='properBox'>
               <div className={`proper${proper.index}`}>
-                {proper.description}
+                <div className="properDescription">{proper.description}</div>
               </div>
             </div>
           ))}

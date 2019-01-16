@@ -67,3 +67,12 @@
     padding-bottom: 1rem;
     font-size: 1.5rem; 
 }
+
+@media screen and (max-width: 776px){
+    .Kakao {
+        display:block;
+    }
+    .KakaoBox {
+        display: block;
+    }
+}

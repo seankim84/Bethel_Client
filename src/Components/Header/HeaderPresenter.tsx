@@ -1,6 +1,6 @@
-import  { Dropdown ,Icon, Menu } from 'antd';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import MenuDrawer from '../Drawer';
 import './Header.css';
 
 interface IProps {
@@ -8,33 +8,8 @@ interface IProps {
     classname: any
 };
 
-const menu = (
-  <Menu>
-    <Menu.Item>
-      <Link to={"/intro"}>
-        Intro
-      </Link>
-    </Menu.Item>
-    <Menu.Item>
-      <Link to={"/team"}>
-        Team
-      </Link>
-    </Menu.Item>
-    <Menu.Item>
-      <Link to={"/family"}>
-        Family
-      </Link>
-    </Menu.Item>
-    <Menu.Item>
-        <Link to={"/preach"}>
-                Preach
-    </Link>
-    </Menu.Item>
-  </Menu>
-);
-
 const Header: React.SFC<IProps> = (props) => (
-  <section className="Header">
+  <section className="Header">  
     <header>
       <div className="HeaderTop">
         <h1>
@@ -42,11 +17,7 @@ const Header: React.SFC<IProps> = (props) => (
         </h1>
         <div className="ShadowTop">
           <Link className={props.classname} id="ShadowTitle" to={"/"}>bethel</Link>
-        <Dropdown className="ShadowDown" overlay={ menu }>
-          <a href="#">
-            <Icon className="dropDown" type="menu-fold" />
-          </a>
-        </Dropdown>
+          <div className="ShadowDown"><MenuDrawer /></div>
       </div>
         <nav>
           <ul>

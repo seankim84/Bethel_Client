@@ -21,7 +21,7 @@ const VideoPresenter:React.SFC<IProps> = (props) => {
             <p>{props.description}</p>
             <div className="VideoSpan">
                 <span>{props.publisedAt}</span>
-                <span>#장상진 목사</span>
+                <span>#이지균 목사</span>
             </div>
           </div>
       </div>

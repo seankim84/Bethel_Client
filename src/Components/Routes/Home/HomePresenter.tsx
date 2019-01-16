@@ -1,5 +1,6 @@
 import React from 'react';
 import Contact from "../../Contact";
+import Footer from '../../Footer';
 import Header from "../../Header";
 import Info from "../../Info";
 import Intro from '../../Intro';
@@ -16,6 +17,7 @@ class HomePresenter extends React.Component {
                     <Info />
                     <Mission />
                     <Contact />
+                    <Footer />
                 </div>
             </div>
         )   

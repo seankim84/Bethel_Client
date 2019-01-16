@@ -75,3 +75,13 @@
 .ProperExplain h1 {
     font-weight: bold;
 }
+
+@media screen and (max-width: 776px) {
+    .ProperExplain h1{
+        display:none;
+    }
+
+    .FamilyFooter {
+        display:none;
+    }
+}

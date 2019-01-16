@@ -1,0 +1,19 @@
+.MenuIcon {
+    font-size:1.5rem;
+    color: #292c33;
+    display: grid;
+    cursor: pointer;
+}
+
+.MenuDrawer {
+    width:100%;
+    display:grid;
+    justify-items: flex-end;
+}
+
+.DrawerItems {
+    display: grid;
+    font-size: 1rem;
+    justify-items: center;
+    grid-template-columns: repeat(4,1fr);    
+}
