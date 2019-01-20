@@ -7,11 +7,12 @@ const Footer: React.SFC = () => {
         <div>
         <footer className="Footer">
             <div className="footerExplain">
+                <span>Vietnam Bethel Church</span>
                 <span>&copy;CopyRight All rights reserved Bethel</span>
             </div>
             <div className="footerIcon">
-                <div><Icon className="facebookIcon" type="facebook" /></div>
-                <div><Icon className="instagramIcon" type="instagram" /></div>
+                <Icon className="facebookIcon" type="facebook" />
+                <Icon className="instagramIcon" type="instagram" />
             </div>
         </footer>
         </div>

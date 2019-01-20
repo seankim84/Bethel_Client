@@ -76,6 +76,7 @@ class Info extends React.Component {
                         <Minister />
                     </div>
                 </div>
+               
                 
             </section>
             

@@ -14,8 +14,13 @@
 }
 
 .footerExplain {
+  width:100%;
+  height:100%;
+  padding-left: 2rem;
   display: grid;
   align-content: center;
+  font-weight: lighter;
+  justify-items: flex-start;
 }
 
 .footerIcon {
@@ -25,6 +30,18 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
+  cursor: pointer;
 }
 
-
+@media screen and (max-width:776px) {
+  .Footer {
+    display: block;
+  }
+  .footerExplain {
+    padding-left:1.2rem;
+    text-align: center;
+  }
+  .footerIcon {
+    display: none;
+  }
+}

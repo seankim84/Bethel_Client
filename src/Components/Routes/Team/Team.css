@@ -36,18 +36,31 @@
     text-decoration: none;
 }
 
-.PeopleBox {
-    padding: 6rem 20px;
-    width: 100%;
-    height: 140vh;
+.MinisterBox {
+    width:100%;
+    height:100%;
     display: grid;
-    grid-gap: 3rem;
-    justify-content: center;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    padding: 1.5rem;
+}
+
+.Minister {
+    width:100%;
+    height:100%;
+}
+
+#minister1 {
+    background: url('../../../images/minister1.jpeg') center/cover no-repeat;
+    background-size: 120%;
+}
+
+#minister3 {
+    background: url('../../../images/minister3.jpeg') center/cover no-repeat;
 }
 
 
-.PeopleBox1 {
+/* .PeopleBox1 {
   background: url('../../../images/jang.jpeg') center top /cover no-repeat;
   background-size: 100%;
 }
@@ -75,7 +88,7 @@
 .PeopleBox6 {
     background: url('../../../images/jang.jpeg') center top /cover no-repeat;
     background-size: 100%;
-}
+} */
 
 .overlay {
   height: 100%;
@@ -112,17 +125,7 @@
 /* mobile  */
 
 @media screen and (max-width:776px) {
-    .PeopleBox {
+    .MinisterBox {
         display: block;
-    }
-    #HumanBox {
-        width: auto;
-        height: 50%;
-        display: grid;
-        grid-template-rows: repeat(6, 1fr);
-        align-items: space-between;
-    }.overlay {
-        width:100%;
-        height:100%;
     }
 }
