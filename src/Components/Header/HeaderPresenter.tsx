@@ -23,22 +23,22 @@ const Header: React.SFC<IProps> = (props) => (
           <ul>
             <li>
               <Link className={props.classname} to={"/intro"}>
-                Intro
+                교회소개
               </Link>
             </li>
             <li>
               <Link className={props.classname} to={"/team"}>
-                Team
+                섬기는 이
               </Link>
             </li>
-            <li>
+            <li>  
               <Link className={props.classname} to={"/family"}>
-                Family
+                양육과정
               </Link>
             </li>
             <li>
               <Link className={props.classname} to={"/preach"}>
-                Preach
+                설교영상 
               </Link>
             </li>
           </ul>

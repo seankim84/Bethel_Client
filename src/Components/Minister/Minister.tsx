@@ -2,7 +2,6 @@ import React from 'react';
 // import paul  from '../../images/paul.jpeg';
 import './Minister.css';
 
-
 export const Minister:React.SFC = () => {
     return <div className="minister">
         <div className="col-1">
@@ -18,7 +17,7 @@ export const Minister:React.SFC = () => {
             우리 주님이 오실 때까지 배우고 가르치며<br /> 
             성령님의 인도하심으로 열방을 향해 나가며 베델에 주신 주님의 비젼을 계속 이루어 갈 것입니다<br />
           </p>
-          <strong>Paul Han</strong>
+          <strong>Paul Hahn</strong>
         </div>
         <div className="col-2">
             <div className="ministerImage" style={{color: '#ffffff'}}>a</div>
