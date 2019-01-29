@@ -1,0 +1,24 @@
+.TimeContent {
+    padding: 3rem 4rem;
+}
+
+.TimeContent h1{
+    font-size: 2rem;
+}
+
+.ant-steps {
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.steps-action {
+    padding-top: 2rem;
+}
+
+.CardBox {
+    width:100%;
+    height: 100%;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}

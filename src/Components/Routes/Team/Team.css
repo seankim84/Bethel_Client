@@ -51,12 +51,28 @@
 }
 
 #minister1 {
-    background: url('../../../images/minister1.jpeg') center/cover no-repeat;
-    background-size: 120%;
+    background: url('../../../images/김일경목사님.jpeg') center/cover no-repeat;
+    background-size: 70%;
+}
+
+#minister2 {
+    background: url('../../../images/이성근목사님.jpeg') center/cover no-repeat;
+    background-size: 70%;
 }
 
 #minister3 {
-    background: url('../../../images/minister3.jpeg') center/cover no-repeat;
+    background: url('../../../images/장상진목사님.jpeg') center/cover no-repeat;
+    background-size: 70%;
+}
+
+#minister4 {
+  background: url('../../../images/이지균목사님.jpeg') center/cover no-repeat;
+  background-size: 70%;
+}
+
+#minister5 {
+  background: url('../../../images/김상훈목사님.jpeg') center/cover no-repeat;
+  background-size: 70%;
 }
 
 

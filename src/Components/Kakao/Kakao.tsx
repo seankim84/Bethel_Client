@@ -21,14 +21,14 @@ const Kakao:React.SFC = () => {
               <div className="KakaoInner">
                 <Icon style={{fontSize:"5rem"}}type="user-add" />
                 <h3>새가족 양성</h3>
-                <p><strong>그리스도의 5확신 과정(5주 과정)</strong></p>
-                <p>이수 후 교회 멤버쉽 자격 수여</p>
+                <p><strong>(풍요로운 삶)</strong></p>
+                <p>18주 과정 이수 후 교회 멤버쉽 자격 수여</p>
               </div>
               <div className="KakaoInner">
                 <Icon style={{fontSize:"5rem"}}type="book" />
-                <h3>성경공부</h3>
-                <p><strong>(묵상/성경 통독/구약과 신약의 파노라마 등)</strong></p>
-                <p>이수 후 교회 교사 섬김이 자격 수여</p>
+                <h3>성경 공부</h3>
+                <p><strong>(쉐퍼드라이프)</strong></p>
+                <p>1-6권 이수 후 교회 교사 섬김이 자격 수여</p>
               </div>
               <div className="KakaoInner">
                 <Icon style={{fontSize:"5rem"}}type="global" />

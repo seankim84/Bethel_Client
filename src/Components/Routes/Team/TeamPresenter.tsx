@@ -1,6 +1,7 @@
 import React from "react";
 import Helmet from 'react-helmet';
 import Header from '../../Header';
+import Time from '../../Time';
 
 import './Team.css';
 
@@ -19,20 +20,20 @@ class Team extends React.Component {
                 <p>All Ministers</p>
               </div>
             </div>
+
              <h1>Hochiminh</h1>
             <div className="MinisterBox">
               <div id="minister1" className="Minister"><p>1</p></div>
               <div id="minister2" className="Minister"><p>2</p></div>
               <div id="minister3" className="Minister"><p>3</p></div>
             </div>
+            
+            <h1>Hanoi</h1>
             <div className="MinisterBox">
-              <div id="minister4" className="Minister">4</div>
+              <div id="minister4" className="Minister">1</div>
+              <div id="minister5" className="Minister">2</div>
             </div>
-              <h1>Hanoi</h1>
-            <div className="MinisterBox">
-              <div id="minister5" className="Minister">1</div>
-              <div id="minister6" className="Minister">2</div>
-            </div>
+            <Time/>
           </div>
         </section>
       </div>;
