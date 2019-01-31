@@ -11,8 +11,8 @@ const Footer: React.SFC = () => {
                 <span>&copy;CopyRight All rights reserved Bethel</span>
             </div>
             <div className="footerIcon">
-                <Icon className="facebookIcon" type="facebook" />
-                <Icon className="instagramIcon" type="instagram" />
+                <Icon style={{ fontSize:"2.5rem" }}type="facebook" />
+                <Icon style={{ fontSize:"2.5rem" }}type="instagram" />
             </div>
         </footer>
         </div>

@@ -16,18 +16,18 @@ header .HeaderTop {
     display: grid;
     font-size: 2.1rem; 
     align-items: center;
-    font-family: cursive;
+    font-family: 'Stylish', cursive;
     font-weight: bold;
 }
 
 
 
 .HeaderTop nav ul {
-    font-family: "Roboto", sans-serif;
+    font-family: "Stylish", sans-serif;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     list-style: none;
-    font-size: 1.4em;
+    font-size: 1.6rem;
 }
 
 .HeaderTop nav ul li {

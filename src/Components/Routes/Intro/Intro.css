@@ -111,6 +111,16 @@
     justify-items: center;
 }
 
+.BoxInnerTitle {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.BoxInnerTitle span{
+    font-weight: bold;
+}
+
 .IntroColor {
     color:black;
 }

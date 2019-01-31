@@ -1,7 +1,6 @@
 import React from "react";
 import Helmet from 'react-helmet';
 import Header from '../../Header';
-import Time from '../../Time';
 
 import './Team.css';
 
@@ -33,7 +32,6 @@ class Team extends React.Component {
               <div id="minister4" className="Minister">1</div>
               <div id="minister5" className="Minister">2</div>
             </div>
-            <Time/>
           </div>
         </section>
       </div>;

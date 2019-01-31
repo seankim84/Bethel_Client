@@ -7,35 +7,7 @@
     justify-content: center;
 }
 
-.ContactTitle {
-    padding-top: 5rem;
-    width: 100%;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-}
 
-.ContactTitle h1 {
-  font-size:3rem;
-}
-
-.ContactTitle p {
-    font-size:1rem;
-}
-
-.Map {
-    width:100vw;
-    height: 60vh;
-    margin: 0;
-}
-
-.Map iframe {
-    width: 100%;
-    height: 100%;
-    margin:0;
-    padding:0;
-    border: none;
-}
 
 @media screen and (max-width: 776px) {
   .ContactTitle {

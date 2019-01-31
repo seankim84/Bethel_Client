@@ -13,7 +13,7 @@ const Header: React.SFC<IProps> = (props) => (
     <header>
       <div className="HeaderTop">
         <h1>
-          <Link className={props.classname} to={"/"}>Bethel</Link>
+          <Link className={props.classname} to={"/"}>베델교회</Link>
         </h1>
         <div className="ShadowTop">
           <Link className={props.classname} id="ShadowTitle" to={"/"}>bethel</Link>

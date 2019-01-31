@@ -23,15 +23,19 @@
   justify-items: flex-start;
 }
 
+
 .footerIcon {
-  width: auto;
-  height: auto;
-  font-size: 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
-  cursor: pointer;
+  width: 100%;
+  display:flex;
+  justify-items: center;
 }
+
+.facebookIcon:hover {
+  cursor: pointer;
+  padding-bottom: 1rem;
+}
+
+
 
 @media screen and (max-width:776px) {
   .Footer {

@@ -1,0 +1,39 @@
+.Map {
+  width: 100vw;
+  height: 60vh;
+  margin: 0;
+}
+
+.Map iframe {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.MapExplain {
+  padding-left: 4rem;
+  font-size:1rem;
+  color: black;
+}
+
+.steps-action {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.ant-steps {
+  padding: 1rem 4rem 2rem 4rem;
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+  display:flex;
+  justify-items: center ;
+}
+
+.MapContent h1 {
+  display:grid;
+  justify-items: center;
+  font-size: 3rem; 
+}

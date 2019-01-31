@@ -60,21 +60,6 @@ class TabSlider extends React.Component {
                   </div>
                 </div>
               </TabPane>
-              <TabPane tab="2014.11" key="5">
-                <div id="Tab" className="TabBox5">
-                  <div className="TabIntro">
-                    <h2>2014.11</h2>
-                    <span>미얀마 양곤 베델교회 창립</span>
-                    <p>
-                      Lorem ipsum dolor site amet, consectetur adipscing
-                      elit, sed do eisumod tempor incididut ut labore et
-                      dolore magna aliqua. Ut enim ad mimim venjam, quis
-                      nostrud exercitation ullamco laboris nisi ut
-                      aliquip ex ea commodo consequat.
-                    </p>
-                  </div>
-                </div>
-              </TabPane>
             </Tabs>
           </div>;
     }
