@@ -1,4 +1,4 @@
-import { Button, Steps } from 'antd';
+import { Button, Icon, Steps } from 'antd';
 import  React from 'react';
 import './Map.css';
 
@@ -12,7 +12,9 @@ const steps = [
             <p><strong>주소: </strong>380 Dien Bien Phu, Phuong 11, Quan 10, Ho Chi Minh</p>
             <p><strong>차량담당: </strong>0707-085-574</p>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4884490267727!2d106.67798231494179!3d10.773852062186894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f21323042f1%3A0xce93d104d13da15b!2z67Kg64246rWQ7ZqM!5e0!3m2!1sko!2skr!4v1548912214139" />
+        <div className="MapMain">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4884490267727!2d106.67798231494179!3d10.773852062186894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f21323042f1%3A0xce93d104d13da15b!2z67Kg64246rWQ7ZqM!5e0!3m2!1sko!2skr!4v1548912214139" />
+        </div>
       </div>
     ),
     title: "사이공"
@@ -73,30 +75,22 @@ class GoogleMap extends React.Component {
 
   public render() {
     const { current } = this.state;
-    return (
-      <div className="MapContent">
-          <h1>Contacts</h1>
+    return <div className="MapContent">
+        <h1>Contacts</h1>
         <Steps current={current}>
           {steps.map(item => <Step key={item.title} title={item.title} />)}
         </Steps>
         <div className="steps-content">{steps[current].content}</div>
         <div className="steps-action">
-          {
-            current < steps.length - 1
-            && <Button type="primary" onClick={() => this.next()}>다음</Button>
-          }
-          
-          {
-            current > 0
-            && (
-            <Button style={{ marginLeft: 8 }} onClick={() => this.prev()}>
-              이전
-            </Button>
-            )
-          }
+          {current < steps.length - 1 && <Button style={{ fontSize: "1.5rem" }} type="primary" onClick={() => this.next()}>
+              <Icon type="forward" />
+            </Button>}
+
+          {current > 0 && <Button style={{ fontSize:"1.5rem", marginLeft: 8 }} onClick={() => this.prev()}>
+              <Icon type="backward" />
+            </Button>}
         </div>
-      </div>
-    );
+      </div>;
   }
 }
 

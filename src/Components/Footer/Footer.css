@@ -25,17 +25,33 @@
 
 
 .footerIcon {
+  height: 100%;
   width: 100%;
-  display:flex;
-  justify-items: center;
+  display:grid;
+  align-items: center;
+  grid-gap:1rem;
+  grid-template-columns: 1fr 1fr;
 }
 
-.facebookIcon:hover {
+.anticon-facebook {
+  display: grid;
+  justify-items: flex-end;
+}
+
+.anticon-facebook svg:hover {
+  color: #e1e1e1;
   cursor: pointer;
-  padding-bottom: 1rem;
 }
 
+.anticon-instagram {
+  display: grid;
+  justify-items: flex-start;
+}
 
+.anticon-instagram svg:hover {
+  color: #e1e1e1;
+  cursor: pointer;
+}
 
 @media screen and (max-width:776px) {
   .Footer {
