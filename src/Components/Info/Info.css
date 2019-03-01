@@ -128,12 +128,10 @@
 }
 
 .modalboxLeft h1 {
+    margin: 0;
+    padding-bottom: 1.5rem;
     font-size: 3rem;
     color: #ffffff;
-}
-
-.modalboxLeft span {
-    font-size: 1.5rem;
 }
 
 .modalboxLeft p {
@@ -152,14 +150,13 @@
 }
 
 .modalboxRight h1 {
+  margin:0;
+  padding-bottom:1.5rem;
   font-size: 3rem;
   color:#ffffff;
-}
-
-.modalboxRight span {
-  font-size: 1.5rem;
 }
 
 .modalboxRight p {
   font-size: 1rem;
 }
+

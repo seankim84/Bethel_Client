@@ -4,12 +4,10 @@ import Helmet from 'react-helmet';
 // import hanoi from "../../../images/hanoiIcon.png";
 // import hochiminh from "../../../images/hochiminhIcon.png";
 // import saigon from "../../../images/saigonIcon.png";
-// import Footer from '../../Footer';
 import Header from '../../Header';
 import Minister from "../../Minister";
 import TabSlider from '../../Tab';
 import Time from '../../Time';
-
 import './Intro.css';
 
 class Info extends React.Component {
@@ -79,7 +77,6 @@ class Info extends React.Component {
                         <Time />
                 </div>
             </section>
-            
             </div>
             
         )
