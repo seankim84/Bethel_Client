@@ -63,6 +63,10 @@
   justify-items: center;
 }
 
+.PreachLink p {
+  margin: 0;
+}
+
 .PreachBoxButton {
   border: none;
   font-size:1rem;
@@ -94,25 +98,39 @@
   color: black;
 }
 
+.youTubeIcon {
+  font-size:1.6rem;
+}
+
 @media screen and (max-width:776px) {
   .PreachIntro {
     display: grid;
     grid-template-columns: 2fr 1fr;
     justify-items: center;
+    padding-bottom:1rem;
   }
 
   .PreachTitle {
     padding: 0;
   }
 
-  .PreachBoxButton {
-    width:80%;
-    height:auto;
-    font-size:12px;
+  .PreachBoxButton i {
+    font-size:1.4rem;
+  }
+  
+  .PreachBoxButton p {
+    display:none;
+    
   }
 
   .PreachBox1 {
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding:1rem 1rem 0 1rem;
+  }
+
+  .PreachFooter {
+    display: none;
   }
 
 }

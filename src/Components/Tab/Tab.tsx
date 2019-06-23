@@ -38,20 +38,7 @@ class TabSlider extends React.Component {
                   </div>
                 </div>
               </TabPane>
-              <TabPane className="Taborder" tab="2011.3" key="3">
-                <div id="Tab" className="TabBox3">
-                  <div className="TabIntro">
-                    <h2>2011.3</h2>
-                    <span>공항 베델교회 창립</span>
-                    <p>
-                      공항지역과 12군에 사는 <br />
-                      다문화가정을 위해 세위진 교회입니다 <br />
-                      다문화가정 아이들을 위해 주일학교를 운영하며 <br />
-                      다문화센터를 통해 복음 전도를 실천하는 공동체입니다
-                    </p>
-                  </div>
-                </div>
-              </TabPane>
+              
               <TabPane className="Taborder" tab="2012.10" key="4">
                 <div id="Tab" className="TabBox4">
                   <div className="TabIntro">

@@ -28,7 +28,7 @@ class Preach extends React.Component {
                     <div className="PreachLink">
                     <button type="button" className="PreachBoxButton">
                     <a href="https://www.youtube.com/channel/UCMurc2-6NyhD9z4y06i4m6g" target="blank" style={{textDecoration: "none", color:"black"}}>
-                        <Icon style={{ color: "red" }}type="youtube" /> Move to the Channel
+                        <Icon className="youTubeIcon" style={{ color: "red" }} type="youtube" /> <p>YouTube Channel</p>
                         </a>
                     </button>
                     </div>
@@ -38,7 +38,7 @@ class Preach extends React.Component {
                 </div>
               </div>
             </section>
-            <section>
+            <section className="PreachFooter">
               <Footer />
             </section>
            

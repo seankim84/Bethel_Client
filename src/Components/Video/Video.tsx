@@ -25,7 +25,7 @@ export default class Video extends React.Component{
                         videoId={preach.id.videoId}
                         description={preach.snippet.description}
                         publisedAt={preach.snippet.publishedAt.substr(0, 10).replace(/-/gi,'.')}
-                        title={preach.snippet.title}
+                        title={preach.snippet.title.replace(/&quot;|&#39;/g, '"')}
                         key={i}
                     />
                 )

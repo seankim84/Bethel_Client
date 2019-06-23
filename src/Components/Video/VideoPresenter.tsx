@@ -17,11 +17,11 @@ const VideoPresenter:React.SFC<IProps> = (props) => {
             <iframe className="innerFrame" src={"https://www.youtube.com/embed/" + `${props.videoId}`} frameBorder="0" allowFullScreen={true} />
           </div>
           <div className="ViedoExplain">
-            <h3>[ {props.title} ]</h3>
+            <h3>{props.title}</h3>
             <p>{props.description}</p>
             <div className="VideoSpan">
                 <span>{props.publisedAt}</span>
-                <span>#이지균 목사</span>
+                <span>#베델공동체</span>
             </div>
           </div>
       </div>

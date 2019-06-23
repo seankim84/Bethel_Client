@@ -56,9 +56,9 @@
 
 .TabIntro h2 {
   color: #ffffff;
-  font-size: 3rem;  
-  font-family: 'Libre Baskerville',
-  serif;
+  font-size: 3rem;
+  padding-bottom: 1rem;  
+
 }
 
 .TabIntro span {
@@ -89,6 +89,7 @@
   .TabIntro h2 {
     font-size: 1.8rem;
     color: #f9ebdd;
+    margin: 0;
   }
   .TabIntro span {
     font-size: 1.4rem;
@@ -96,6 +97,7 @@
 
   .TabBox .TabIntro p {
     padding: 1rem;
+    margin: 0;
     display: block;
   }
 
@@ -123,5 +125,6 @@
     justify-items: center;
     justify-content: center ;
   }
+  
 }
 

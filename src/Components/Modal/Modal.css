@@ -40,6 +40,7 @@
   .modal-main span {
     display: none;
   }
+  
   .modal-main p {
     padding: 3px;
     font-size: 12px;
@@ -49,5 +50,4 @@
   #modalMain2 p {
     padding: 0;
   }
-
 }

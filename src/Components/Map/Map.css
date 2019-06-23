@@ -52,4 +52,13 @@
       display: none;
     }
 
+    .MapContent h1 {
+      font-size: 2rem;
+      margin: 0;  
+    }
+
+    .steps-action {
+      padding: 1rem 0 1rem 0;
+    }
+
   }

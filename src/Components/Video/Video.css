@@ -88,17 +88,28 @@
 
 @media screen and (max-width:776px) {
   #VideoPresenterBox {
-    margin-bottom: 1.5rem ;
+   display: grid;
+   grid-template-rows: 1fr 1fr;
+  }
+
+  .VideoFrame {
+    width:100%;
+    height:100%;
   }
 
   .ViedoExplain {
-    display:none;
+    text-align: center;
+    padding: 0.5rem 0.5rem;
   }
 
+  .ViedoExplain h3 {
+    font-size: 1rem;
+    margin:0;
 
-  .VideoFrame {
-    width: 100%;
-    height: auto;
+  }
+
+  .ViedoExplain p {
+    margin: 0;
   }
 
 }

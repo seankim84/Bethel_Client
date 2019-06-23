@@ -8,7 +8,7 @@ import './Mission.css';
 
 const Mission: React.SFC = ({}) => (
     <div>
-  <section className="Mission">
+  <div className="Mission">
     <div className="MissionTitle ">
       <h1>Mission</h1>
       <p>예수님만을 따르는 베델교회</p>
@@ -33,7 +33,7 @@ const Mission: React.SFC = ({}) => (
         <img src={Mission1} alt="Missionary"/>
       </div>
     </div>
-  </section>
+  </div>
   </div>
 );
 

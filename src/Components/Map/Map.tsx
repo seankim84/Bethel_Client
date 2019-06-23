@@ -37,18 +37,6 @@ const steps = [
     content: (
       <div className="Map">
         <div className="MapExplain">
-            <p><strong>주소: </strong>406 Truong Chinh, Phuong 13, Tan Binh, Ho Chi Minh</p>
-            <p><strong>차량담당: </strong>093-778-2042</p>
-        </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.1448543327697!2d106.63758041480092!3d10.800215692305343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752951cf180a59%3A0x9124a0824d8539cf!2zNDA2IFRyxrDhu51uZyBDaGluaCwgUGjGsOG7nW5nIDEzLCBUw6JuIELDrG5oLCBI4buTIENow60gTWluaCwg67Kg7Yq464Ko!5e0!3m2!1sko!2skr!4v1548912486162" />
-      </div>
-    ),
-    title: "공항"
-  },
-  {
-    content: (
-      <div className="Map">
-        <div className="MapExplain">
             <p><strong>주소: </strong>Toa nha Detech, So 8, Tôn That Thuyet, My Dinh, 2 Cau Giay, My Dinh, Cau Giay, Hanoi</p>
             <p><strong>차량담당: </strong>093-475-7210</p>
         </div>

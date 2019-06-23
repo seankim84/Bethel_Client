@@ -49,15 +49,7 @@ class Info extends React.Component {
                                 <span>베델 교회</span>
                             </div>
                         </div>
-                        <div id="boxid" className="Box3">
-                            <div className="BoxBackground">
-                                <a className="svgTarget" target="blank" href="https://goo.gl/maps/fk2o6J9YC9H2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 7.093v-5.093h-3v2.093l3 3zm4 5.907l-12-12-12 12h3v10h7v-5h4v5h7v-10h3zm-5 8h-3v-5h-8v5h-3v-10.26l7-6.912 7 6.99v10.182z"/></svg></a>
-                                </div>
-                            <div className="BoxTitle">
-                                <span>공항</span>
-                                <span>베델 교회</span>
-                            </div>
-                        </div>
+                        
                         <div id="boxid" className="Box4">
                             <div className="BoxBackground">
                                 <a className="svgTarget" target="blank" href="https://www.google.com/maps/place/Hanoi+Bethel+Church/@21.0286836,105.7799285,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab4cd4c609df:0x4d5733435648516e!8m2!3d21.0286786!4d105.7821172"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" clip-rule="evenodd"><path d="M11 3v-3h4v2h-3v1h6v3h2v2h3v14h1v2h-24v-2h1v-14h3v-2h2v-3h5zm3 20v-5l-2-1-2 1v5h4zm2-18h-8v3h-2v2h-3v12h5v-5l4-2.336 4 2.336v5h5v-12h-3v-2h-2v-3zm2 13h2v2h-2v-2zm-14 0h2v2h-2v-2zm14-3h2v2h-2v-2zm-14 0h2v2h-2v-2zm14-3h2v2h-2v-2zm-14 0h2v2h-2v-2zm8-5c1.656 0 3 1.344 3 3s-1.344 3-3 3-3-1.344-3-3 1.344-3 3-3zm0 1h-1v3h3v-1h-2v-2z"/></svg></a>

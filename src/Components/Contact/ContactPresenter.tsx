@@ -4,9 +4,9 @@ import './Contact.css'
 
 const ContactPresenter: React.SFC = ({}) => (
   <div>
-    <section className="Contact">
+    <div className="Contact">
       <GoogleMap />
-    </section>
+    </div>
   </div>
 );
 

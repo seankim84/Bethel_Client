@@ -102,37 +102,7 @@ const steps = [
     </div>,
     title: "푸미흥",  
   },
-  {
-    content: <div className="TimeForm">
-        <div>
-            <p
-              style={{
-                color: 'rgba(0, 0, 0, 0.85)',
-                fontSize: 14,
-                fontWeight: 500,
-                marginBottom: 16,
-              }}
-            >
-              <p style={{fontSize: "1.2rem"}}>공항 교회 예배</p>
-            </p>
-    <div className="CardBox">
-        <Card
-          type="inner"
-          title="주일 예배">
-            오전 11시 30분 (본당)
-        </Card>
-
-        <Card
-          type="inner"
-          title="주일학교">
-          오전 11시 (희망센터)
-        </Card>
-
-            </div>
-        </div>
-    </div>,
-    title: "공항" 
-  },
+  
   {
     content: <div className="TimeForm">
         <div>

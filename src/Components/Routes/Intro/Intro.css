@@ -63,7 +63,7 @@
 .Boxs {
     padding-top: 1.5rem;
     display:grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
 }
 
 .BoxBackground {
@@ -152,10 +152,12 @@
       font-size: 1.1rem;
       padding: 0 15px;
   }
-
+  
   .Boxs {
-      display: block;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
   }
+  
 
   .BoxBackground {
       display: none;

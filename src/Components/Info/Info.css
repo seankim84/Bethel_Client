@@ -81,62 +81,24 @@
   padding-left: 2rem;
 }
 
-@media screen and (max-width: 776px){
-
-    .InfoTitle {
-        width: 100%;
-        height: 100%;
-    }
-
-    .InfoTitle h1{
-        padding: 0;
-      font-size: 2rem;
-    }
-
-    .InfoTitle p {
-        width: 100%;
-        font-size: 1.2rem;
-        text-align: center; 
-    } 
-
-    .WholeBox {
-        width: 100%;
-        height: 60%;
-        display:block;
-    }
-
-    .WholeBox p {
-        font-size: 2rem;
-        padding-top: 2rem;
-    }
-
-    .arrow {
-        display: none;
-    }
-}
-
 .modalboxLeft {
     /* background: url('../../images/LeftBox.jpg') center/cover no-repeat; */
     background: black;
     opacity: 0.8;
     color: #ffffff;
     text-align: center;
-    padding: 2rem 2rem;
-    height: 70vh;
+    padding-bottom: 2rem;
     width: 100%;
-    height:100%;
+    height:auto
 }
 
 .modalboxLeft h1 {
+    padding-top:1.5rem;
     margin: 0;
-    padding-bottom: 1.5rem;
-    font-size: 3rem;
+    font-size: 1.5rem;
     color: #ffffff;
 }
 
-.modalboxLeft p {
-    font-size: 1rem;
-}
 
 .modalboxRight {
   background: black;
@@ -160,3 +122,80 @@
   font-size: 1rem;
 }
 
+@media screen and (max-width: 776px) {
+    .info {
+        width:100%;
+        height: 80vh;
+    }
+
+    .InfoTitle h1 {
+        font-size:2rem;
+        padding-top:1rem;
+        margin: 0;
+    }
+
+    .InfoTitle p {
+        margin: 0;
+        padding-bottom:1rem;
+        font-size: 1rem;
+    }
+
+    .WholeBox {
+        width: 100%;
+        height:90 ;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .BoxLeft p {
+        margin: 0;
+        font-size: 2.5rem;
+    }
+
+    .BoxRight p {
+        margin: 0;
+        font-size: 2.5rem;
+    }
+
+    .arrow {
+        display: none;
+    }
+    
+    .modalboxLeft {
+        padding-bottom: 1rem ;
+        margin: 0;
+        position: absolute;
+        top:30vh;
+    }
+
+    .modalboxLeft p  {
+        font-size: 0.7rem ;
+        line-height: 2rem;
+        margin: 0;
+    }
+
+    .modalboxRight {
+        width:100%;
+        height: auto;
+        padding:0.3rem 0.3rem 1rem 0.3rem;
+        margin: 0;
+        position: absolute;
+        top:30vh;
+    }
+
+    .modalboxRight h1 {
+        font-size:1.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .modalboxRight p {
+        font-size: 0.7rem;
+        line-height: 2rem;
+        margin: 0;
+    }
+
+    .hiddenp {
+        display: none;
+    }
+
+}
